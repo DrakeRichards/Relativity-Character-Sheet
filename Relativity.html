@@ -1,0 +1,861 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Relativity Character Sheet</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="Relativity.css" />
+    <script src="main.js"></script>
+</head>
+
+<body>
+    <h1>Relativity</h1>
+    <div class="sheet-row">
+        <div class="sheet-column">
+            <div class="sheet-row">
+                <div class="sheet-column">
+                    <table>
+                        <tr>
+                            <td>
+                                <span>Name</span>
+                            </td>
+                            <td>
+                                <input type="text" name="attr_character_name" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <span>Race</span>
+                            </td>
+                            <td>
+                                <input type="text" name="attr_Race" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <span>Race</span>
+                            </td>
+                            <td>
+                                <input type="text" name="attr_Race" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <span>Level</span>
+                            </td>
+                            <td>
+                                <input type="number" name="attr_Level" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <span>Player</span>
+                            </td>
+                            <td>
+                                <input type="text" name="attr_Player" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <span>Campaign</span>
+                            </td>
+                            <td>
+                                <input type="text" name="attr_Campaign" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <span>Character Points</span>
+                            </td>
+                            <td>
+                                <input type="number" name="attr_Character-Points" />
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="sheet-column">
+                    <div class="sheet-header">
+                        <span>Stats</span>
+                    </div>
+                    <table>
+                        <tr>
+                            <th></th>
+                            <th>Off</th>
+                            <th>Def</th>
+                        </tr>
+                        <tr>
+                            <td>Power</td>
+                            <td>
+                                <input type="number" name="attr_Power-Off" value="0" />
+                            </td>
+                            <td>
+                                <input type="number" name="attr_Power-Def" value="0" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Agility</td>
+                            <td>
+                                <input type="number" name="attr_Agility-Off" value="0" />
+                            </td>
+                            <td>
+                                <input type="number" name="attr_Agility-Def" value="0" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Endurance</td>
+                            <td>
+                                <input type="number" name="attr_Endurance-Off" value="0" />
+                            </td>
+                            <td>
+                                <input type="number" name="attr_Endurance-Def" value="0" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Intelligence</td>
+                            <td>
+                                <input type="number" name="attr_Intelligence-Off" value="0" />
+                            </td>
+                            <td>
+                                <input type="number" name="attr_Intelligence-Def" value="0" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Wit</td>
+                            <td>
+                                <input type="number" name="attr_Wit-Off" value="0" />
+                            </td>
+                            <td>
+                                <input type="number" name="attr_Wit-Def" value="0" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Presence</td>
+                            <td>
+                                <input type="number" name="attr_Presence-Off" value="0" />
+                            </td>
+                            <td>
+                                <input type="number" name="attr_Presence-Def" value="0" />
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <div>
+                <div class="sheet-header">
+                    <span>Combat</span>
+                </div>
+                <div class="sheet-trackers">
+                    <table>
+                        <tr>
+                            <th>HP</th>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="number" name="attr_HP">
+                            </td>
+                        </tr>
+                    </table>
+                    <table>
+                        <tr>
+                            <th>SP</th>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="number" name="attr_SP">
+                            </td>
+                        </tr>
+                    </table>
+                    <table>
+                        <tr>
+                            <th>DC</th>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="number" name="attr_DC">
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <table>
+                    <tr>
+                        <th></th>
+                        <th>Total</th>
+                        <th>Base</th>
+                        <th>SA</th>
+                        <th>AHS</th>
+                        <th>Other</th>
+                        <th>Temp</th>
+                    </tr>
+                    <tr>
+                        <td>Init</td>
+                        <td>d6+</td>
+                        <td>=</td>
+                        <td>
+                            <input type="number" name="attr_Init-SA">
+                        </td>
+                        <td>
+                            <input type="number" name="attr_Init-AHS">
+                        </td>
+                        <td>
+                            <input type="number" name="attr_Init-Other">
+                        </td>
+                        <td>
+                            <input type="number" name="attr_Init-Temp">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Attack</td>
+                        <td>d6+</td>
+                        <td>=</td>
+                        <td>
+                            <input type="number" name="attr_Attack-SA">
+                        </td>
+                        <td>
+                            <input type="number" name="attr_Attack-AHS">
+                        </td>
+                        <td>
+                            <input type="number" name="attr_Attack-Other">
+                        </td>
+                        <td>
+                            <input type="number" name="attr_Attack-Temp">
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div>
+                <div class="sheet-header">
+                    <span>Weapons</span>
+                </div>
+                <table>
+                    <tr>
+                        <th colspan="2">Weapon</th>
+                        <th>AHS</th>
+                        <th>Base Dam.</th>
+                        <th>Weapon Dam.</th>
+                        <th>Range</th>
+                        <th>Rank</th>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <input type="text" name="attr_Weapon-Name">
+                        </td>
+                        <td>
+                            <input type="number" name="attr_Weapon-AHS" value="0">
+                        </td>
+                        <td>
+                            <input type="number" name="attr_Weapon-Base-Damage" value="0">
+                        </td>
+                        <td>
+                            <input type="number" name="attr_Weapon-Damage" value="0">
+                        </td>
+                        <td>
+                            <input type="number" name="attr_Weapon-Range" value="0">
+                        </td>
+                        <td>
+                            <input type="number" name="attr_Weapon-Rank" value="0">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="width:30px">Mods:</td>
+                        <td colspan="6">
+                            <input type="text" name="attr_Weapon_Mods">
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div>
+                <div class="sheet-header">
+                    <span>Worn Armor</span>
+                </div>
+                <table>
+                    <tr>
+                        <th colspan="2">Armor Type</th>
+                        <th>DC</th>
+                        <th>DR</th>
+                        <th>Rank</th>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <input type="text" name="attr_Armor-Name">
+                        </td>
+                        <td>
+                            <input type="number" name="attr_Armor-DC" value="0">
+                        </td>
+                        <td>
+                            <input type="number" name="attr_Armor-DR" value="0">
+                        </td>
+                        <td>
+                            <input type="number" name="attr_Armor-Rank" value="0">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="width:30px">Mods</td>
+                        <td colspan="4">
+                            <input type="text" name="attr_Armor-Mods">
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <div class="sheet-column">
+            <div>
+                <div class="sheet-header">
+                    <span>Skills</span>
+                </div>
+                <table>
+                    <tr>
+                        <th></th>
+                        <th>Level</th>
+                        <th>RHS</th>
+                        <th>AHS</th>
+                        <th>Stat</th>
+                        <th>Roll</th>
+                    </tr>
+                    <tr>
+                        <td>Athletics</td>
+                        <td>
+                            <input type="number" name="attr_Skill-Athletics-Level" value="0">
+                        </td>
+                        <td>
+                            <input type="number" name="attr_Skill-Athletics-RHS" value="0">
+                        </td>
+                        <td>
+                            <input type="number" name="attr_Skill-Athletics-AHS" value="0">
+                        </td>
+                        <td>
+                            <input type="checkbox" name="attr_Skill-Athletics-Stat">
+                        </td>
+                        <td>
+                            <button type="roll" name="attr_Skill-Athletics-Roll" value="Skillroll"></button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Attack</td>
+                        <td>
+                            <input type="number" name="attr_Skill-Attack-Level" value="0">
+                        </td>
+                        <td>
+                            <input type="number" name="attr_Skill-Attack-RHS" value="0">
+                        </td>
+                        <td>
+                            <input type="number" name="attr_Skill-Attack-AHS" value="0">
+                        </td>
+                        <td>
+                            <input type="checkbox" name="attr_Skill-Attack-Stat">
+                        </td>
+                        <td>
+                            <button type="roll" name="attr_Skill-Attack-Roll" value="Skillroll"></button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Bureaucracy</td>
+                        <td>
+                            <input type="number" name="attr_Skill-Bureaucracy-Level" value="0">
+                        </td>
+                        <td>
+                            <input type="number" name="attr_Skill-Bureaucracy-RHS" value="0">
+                        </td>
+                        <td>
+                            <input type="number" name="attr_Skill-Bureaucracy-AHS" value="0">
+                        </td>
+                        <td>
+                            <input type="checkbox" name="attr_Skill-Bureaucracy-Stat">
+                        </td>
+                        <td>
+                            <button type="roll" name="attr_Skill-Bureaucracy-Roll" value="Skillroll"></button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Co-Pilot</td>
+                        <td>
+                            <input type="number" name="attr_Skill-Co-Pilot-Level" value="0">
+                        </td>
+                        <td>
+                            <input type="number" name="attr_Skill-Co-Pilot-RHS" value="0">
+                        </td>
+                        <td>
+                            <input type="number" name="attr_Skill-Co-Pilot-AHS" value="0">
+                        </td>
+                        <td>
+                            <input type="checkbox" name="attr_Skill-Co-Pilot-Stat">
+                        </td>
+                        <td>
+                            <button type="roll" name="attr_Skill-Co-Pilot-Roll" value="Skillroll"></button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Craft</td>
+                        <td>
+                            <input type="number" name="attr_Skill-Craft-Level" value="0">
+                        </td>
+                        <td>
+                            <input type="number" name="attr_Skill-Craft-RHS" value="0">
+                        </td>
+                        <td>
+                            <input type="number" name="attr_Skill-Craft-AHS" value="0">
+                        </td>
+                        <td>
+                            <input type="checkbox" name="attr_Skill-Craft-Stat">
+                        </td>
+                        <td>
+                            <button type="roll" name="attr_Skill-Craft-Roll" value="Skillroll"></button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Deceive</td>
+                        <td>
+                            <input type="number" name="attr_Skill-Deceive-Level" value="0">
+                        </td>
+                        <td>
+                            <input type="number" name="attr_Skill-Deceive-RHS" value="0">
+                        </td>
+                        <td>
+                            <input type="number" name="attr_Skill-Deceive-AHS" value="0">
+                        </td>
+                        <td>
+                            <input type="checkbox" name="attr_Skill-Deceive-Stat">
+                        </td>
+                        <td>
+                            <button type="roll" name="attr_Skill-Deceive-Roll" value="Skillroll"></button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Demoralize</td>
+                        <td>
+                            <input type="number" name="attr_Skill-Demoralize-Level" value="0">
+                        </td>
+                        <td>
+                            <input type="number" name="attr_Skill-Demoralize-RHS" value="0">
+                        </td>
+                        <td>
+                            <input type="number" name="attr_Skill-Demoralize-AHS" value="0">
+                        </td>
+                        <td>
+                            <input type="checkbox" name="attr_Skill-Demoralize-Stat">
+                        </td>
+                        <td>
+                            <button type="roll" name="attr_Skill-Demoralize-Roll" value="Skillroll"></button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Design</td>
+                        <td>
+                            <input type="number" name="attr_Skill-Design-Level" value="0">
+                        </td>
+                        <td>
+                            <input type="number" name="attr_Skill-Design-RHS" value="0">
+                        </td>
+                        <td>
+                            <input type="number" name="attr_Skill-Design-AHS" value="0">
+                        </td>
+                        <td>
+                            <input type="checkbox" name="attr_Skill-Design-Stat">
+                        </td>
+                        <td>
+                            <button type="roll" name="attr_Skill-Design-Roll" value="Skillroll"></button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Discern</td>
+                        <td>
+                            <input type="number" name="attr_Skill-Discern-Level" value="0">
+                        </td>
+                        <td>
+                            <input type="number" name="attr_Skill-Discern-RHS" value="0">
+                        </td>
+                        <td>
+                            <input type="number" name="attr_Skill-Discern-AHS" value="0">
+                        </td>
+                        <td>
+                            <input type="checkbox" name="attr_Skill-Discern-Stat">
+                        </td>
+                        <td>
+                            <button type="roll" name="attr_Skill-Discern-Roll" value="Skillroll"></button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Dodge</td>
+                        <td>
+                            <input type="number" name="attr_Skill-Dodge-Level" value="0">
+                        </td>
+                        <td>
+                            <input type="number" name="attr_Skill-Dodge-RHS" value="0">
+                        </td>
+                        <td>
+                            <input type="number" name="attr_Skill-Dodge-AHS" value="0">
+                        </td>
+                        <td>
+                            <input type="checkbox" name="attr_Skill-Dodge-Stat">
+                        </td>
+                        <td>
+                            <button type="roll" name="attr_Skill-Dodge-Roll" value="Skillroll"></button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Endure</td>
+                        <td>
+                            <input type="number" name="attr_Skill-Endure-Level" value="0">
+                        </td>
+                        <td>
+                            <input type="number" name="attr_Skill-Endure-RHS" value="0">
+                        </td>
+                        <td>
+                            <input type="number" name="attr_Skill-Endure-AHS" value="0">
+                        </td>
+                        <td>
+                            <input type="checkbox" name="attr_Skill-Endure-Stat">
+                        </td>
+                        <td>
+                            <button type="roll" name="attr_Skill-Endure-Roll" value="Skillroll"></button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Engineer</td>
+                        <td>
+                            <input type="number" name="attr_Skill-Engineer-Level" value="0">
+                        </td>
+                        <td>
+                            <input type="number" name="attr_Skill-Engineer-RHS" value="0">
+                        </td>
+                        <td>
+                            <input type="number" name="attr_Skill-Engineer-AHS" value="0">
+                        </td>
+                        <td>
+                            <input type="checkbox" name="attr_Skill-Engineer-Stat">
+                        </td>
+                        <td>
+                            <button type="roll" name="attr_Skill-Engineer-Roll" value="Skillroll"></button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Gaming</td>
+                        <td>
+                            <input type="number" name="attr_Skill-Gaming-Level" value="0">
+                        </td>
+                        <td>
+                            <input type="number" name="attr_Skill-Gaming-RHS" value="0">
+                        </td>
+                        <td>
+                            <input type="number" name="attr_Skill-Gaming-AHS" value="0">
+                        </td>
+                        <td>
+                            <input type="checkbox" name="attr_Skill-Gaming-Stat">
+                        </td>
+                        <td>
+                            <button type="roll" name="attr_Skill-Gaming-Roll" value="Skillroll"></button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Grapple</td>
+                        <td>
+                            <input type="number" name="attr_Skill-Grapple-Level" value="0">
+                        </td>
+                        <td>
+                            <input type="number" name="attr_Skill-Grapple-RHS" value="0">
+                        </td>
+                        <td>
+                            <input type="number" name="attr_Skill-Grapple-AHS" value="0">
+                        </td>
+                        <td>
+                            <input type="checkbox" name="attr_Skill-Grapple-Stat">
+                        </td>
+                        <td>
+                            <button type="roll" name="attr_Skill-Grapple-Roll" value="Skillroll"></button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Gunner</td>
+                        <td>
+                            <input type="number" name="attr_Skill-Gunner-Level" value="0">
+                        </td>
+                        <td>
+                            <input type="number" name="attr_Skill-Gunner-RHS" value="0">
+                        </td>
+                        <td>
+                            <input type="number" name="attr_Skill-Gunner-AHS" value="0">
+                        </td>
+                        <td>
+                            <input type="checkbox" name="attr_Skill-Gunner-Stat">
+                        </td>
+                        <td>
+                            <button type="roll" name="attr_Skill-Gunner-Roll" value="Skillroll"></button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Hack</td>
+                        <td>
+                            <input type="number" name="attr_Skill-Hack-Level" value="0">
+                        </td>
+                        <td>
+                            <input type="number" name="attr_Skill-Hack-RHS" value="0">
+                        </td>
+                        <td>
+                            <input type="number" name="attr_Skill-Hack-AHS" value="0">
+                        </td>
+                        <td>
+                            <input type="checkbox" name="attr_Skill-Hack-Stat">
+                        </td>
+                        <td>
+                            <button type="roll" name="attr_Skill-Hack-Roll" value="Skillroll"></button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Influence</td>
+                        <td>
+                            <input type="number" name="attr_Skill-Influence-Level" value="0">
+                        </td>
+                        <td>
+                            <input type="number" name="attr_Skill-Influence-RHS" value="0">
+                        </td>
+                        <td>
+                            <input type="number" name="attr_Skill-Influence-AHS" value="0">
+                        </td>
+                        <td>
+                            <input type="checkbox" name="attr_Skill-Influence-Stat">
+                        </td>
+                        <td>
+                            <button type="roll" name="attr_Skill-Influence-Roll" value="Skillroll"></button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Investigate</td>
+                        <td>
+                            <input type="number" name="attr_Skill-Investigate-Level" value="0">
+                        </td>
+                        <td>
+                            <input type="number" name="attr_Skill-Investigate-RHS" value="0">
+                        </td>
+                        <td>
+                            <input type="number" name="attr_Skill-Investigate-AHS" value="0">
+                        </td>
+                        <td>
+                            <input type="checkbox" name="attr_Skill-Investigate-Stat">
+                        </td>
+                        <td>
+                            <button type="roll" name="attr_Skill-Investigate-Roll" value="Skillroll"></button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Manifest</td>
+                        <td>
+                            <input type="number" name="attr_Skill-Manifest-Level" value="0">
+                        </td>
+                        <td>
+                            <input type="number" name="attr_Skill-Manifest-RHS" value="0">
+                        </td>
+                        <td>
+                            <input type="number" name="attr_Skill-Manifest-AHS" value="0">
+                        </td>
+                        <td>
+                            <input type="checkbox" name="attr_Skill-Manifest-Stat">
+                        </td>
+                        <td>
+                            <button type="roll" name="attr_Skill-Manifest-Roll" value="Skillroll"></button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Know</td>
+                        <td>
+                            <input type="number" name="attr_Skill-Know-Level" value="0">
+                        </td>
+                        <td>
+                            <input type="number" name="attr_Skill-Know-RHS" value="0">
+                        </td>
+                        <td>
+                            <input type="number" name="attr_Skill-Know-AHS" value="0">
+                        </td>
+                        <td>
+                            <input type="checkbox" name="attr_Skill-Know-Stat">
+                        </td>
+                        <td>
+                            <button type="roll" name="attr_Skill-Know-Roll" value="Skillroll"></button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Medical</td>
+                        <td>
+                            <input type="number" name="attr_Skill-Medical-Level" value="0">
+                        </td>
+                        <td>
+                            <input type="number" name="attr_Skill-Medical-RHS" value="0">
+                        </td>
+                        <td>
+                            <input type="number" name="attr_Skill-Medical-AHS" value="0">
+                        </td>
+                        <td>
+                            <input type="checkbox" name="attr_Skill-Medical-Stat">
+                        </td>
+                        <td>
+                            <button type="roll" name="attr_Skill-Medical-Roll" value="Skillroll"></button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Navigation</td>
+                        <td>
+                            <input type="number" name="attr_Skill-Navigation-Level" value="0">
+                        </td>
+                        <td>
+                            <input type="number" name="attr_Skill-Navigation-RHS" value="0">
+                        </td>
+                        <td>
+                            <input type="number" name="attr_Skill-Navigation-AHS" value="0">
+                        </td>
+                        <td>
+                            <input type="checkbox" name="attr_Skill-Navigation-Stat">
+                        </td>
+                        <td>
+                            <button type="roll" name="attr_Skill-Navigation-Roll" value="Skillroll"></button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Perception</td>
+                        <td>
+                            <input type="number" name="attr_Skill-Perception-Level" value="0">
+                        </td>
+                        <td>
+                            <input type="number" name="attr_Skill-Perception-RHS" value="0">
+                        </td>
+                        <td>
+                            <input type="number" name="attr_Skill-Perception-AHS" value="0">
+                        </td>
+                        <td>
+                            <input type="checkbox" name="attr_Skill-Perception-Stat">
+                        </td>
+                        <td>
+                            <button type="roll" name="attr_Skill-Perception-Roll" value="Skillroll"></button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Pilot</td>
+                        <td>
+                            <input type="number" name="attr_Skill-Pilot-Level" value="0">
+                        </td>
+                        <td>
+                            <input type="number" name="attr_Skill-Pilot-RHS" value="0">
+                        </td>
+                        <td>
+                            <input type="number" name="attr_Skill-Pilot-AHS" value="0">
+                        </td>
+                        <td>
+                            <input type="checkbox" name="attr_Skill-Pilot-Stat">
+                        </td>
+                        <td>
+                            <button type="roll" name="attr_Skill-Pilot-Roll" value="Skillroll"></button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Program</td>
+                        <td>
+                            <input type="number" name="attr_Skill-Program-Level" value="0">
+                        </td>
+                        <td>
+                            <input type="number" name="attr_Skill-Program-RHS" value="0">
+                        </td>
+                        <td>
+                            <input type="number" name="attr_Skill-Program-AHS" value="0">
+                        </td>
+                        <td>
+                            <input type="checkbox" name="attr_Skill-Program-Stat">
+                        </td>
+                        <td>
+                            <button type="roll" name="attr_Skill-Program-Roll" value="Skillroll"></button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Profession</td>
+                        <td>
+                            <input type="number" name="attr_Skill-Profession-Level" value="0">
+                        </td>
+                        <td>
+                            <input type="number" name="attr_Skill-Profession-RHS" value="0">
+                        </td>
+                        <td>
+                            <input type="number" name="attr_Skill-Profession-AHS" value="0">
+                        </td>
+                        <td>
+                            <input type="checkbox" name="attr_Skill-Profession-Stat">
+                        </td>
+                        <td>
+                            <button type="roll" name="attr_Skill-Profession-Roll" value="Skillroll"></button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Sleight of Hand</td>
+                        <td>
+                            <input type="number" name="attr_Skill-Sleight of Hand-Level" value="0">
+                        </td>
+                        <td>
+                            <input type="number" name="attr_Skill-Sleight of Hand-RHS" value="0">
+                        </td>
+                        <td>
+                            <input type="number" name="attr_Skill-Sleight of Hand-AHS" value="0">
+                        </td>
+                        <td>
+                            <input type="checkbox" name="attr_Skill-Sleight of Hand-Stat">
+                        </td>
+                        <td>
+                            <button type="roll" name="attr_Skill-Sleight of Hand-Roll" value="Skillroll"></button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Stealth</td>
+                        <td>
+                            <input type="number" name="attr_Skill-Stealth-Level" value="0">
+                        </td>
+                        <td>
+                            <input type="number" name="attr_Skill-Stealth-RHS" value="0">
+                        </td>
+                        <td>
+                            <input type="number" name="attr_Skill-Stealth-AHS" value="0">
+                        </td>
+                        <td>
+                            <input type="checkbox" name="attr_Skill-Stealth-Stat">
+                        </td>
+                        <td>
+                            <button type="roll" name="attr_Skill-Stealth-Roll" value="Skillroll"></button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Survival</td>
+                        <td>
+                            <input type="number" name="attr_Skill-Survival-Level" value="0">
+                        </td>
+                        <td>
+                            <input type="number" name="attr_Skill-Survival-RHS" value="0">
+                        </td>
+                        <td>
+                            <input type="number" name="attr_Skill-Survival-AHS" value="0">
+                        </td>
+                        <td>
+                            <input type="checkbox" name="attr_Skill-Survival-Stat">
+                        </td>
+                        <td>
+                            <button type="roll" name="attr_Skill-Survival-Roll" value="Skillroll"></button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Initiative</td>
+                        <td>
+                            <input type="number" name="attr_Skill-Initiative-Level" value="0">
+                        </td>
+                        <td>
+                            <input type="number" name="attr_Skill-Initiative-RHS" value="0">
+                        </td>
+                        <td>
+                            <input type="number" name="attr_Skill-Initiative-AHS" value="0">
+                        </td>
+                        <td>
+                            <input type="checkbox" name="attr_Skill-Initiative-Stat">
+                        </td>
+                        <td>
+                            <button type="roll" name="attr_Skill-Initiative-Roll" value="Skillroll"></button>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+</body>
+
+</html>
