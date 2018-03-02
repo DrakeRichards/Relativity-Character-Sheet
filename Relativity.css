@@ -65,3 +65,23 @@ textarea {
     resize: vertical;
 
 }
+
+.sheet-input-inline {
+    width:100%;
+    height:18px;
+    vertical-align: middle;
+}
+
+.sheet-mani td {
+    text-align: center;
+}
+
+select {
+    margin: 0;
+    height: 23px;
+    vertical-align: middle;
+}
+
+input {
+    vertical-align: middle;
+}

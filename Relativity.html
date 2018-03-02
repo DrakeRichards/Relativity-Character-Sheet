@@ -1024,15 +1024,356 @@
     </div>
     <h2>Manifestations</h2>
     <h3>Milds</h3>
-    <textarea name="attr_Manifestations-Milds" rows="1"></textarea>
+    <table class="sheet-mani">
+        <tr>
+            <td>Name</td>
+            <th colspan="2">
+                <input type="text" name="attr_Mani-Mild-Name">
+            </th>
+            <td>Type</td>
+            <th>
+                <select name="attr_Mani-Mild-Type">
+                    <option value="Attack (Energy)">Attack (Energy)</option>
+                    <option value="Attack (Force)">Attack (Force)</option>
+                    <option value="BFC">BFC</option>
+                    <option value="Buff">Buff</option>
+                    <option value="Buff/AoE">Buff/AoE</option>
+                    <option value="Debuff">Debuff</option>
+                    <option value="Debuff/AoE">Debuff/AoE</option>
+                    <option value="Debuff/Buff">Debuff/Buff</option>
+                </select>
+            </th>
+            <td>Description</td>
+            <th colspan="4">
+                <textarea name="attr_Mani-Mild-Description" rows="1" class="sheet-input-inline"></textarea>
+            </th>
+        </tr>
+        <tr>
+            <td>Circle</td>
+            <th>
+                <select name="attr_Mani-Mild-Circle">
+                    <option value="Slight">Slight</option>
+                    <option value="Moderate">Moderate</option>
+                    <option value="Severe">Severe</option>
+                    <option value="X-Treme!">X-Treme!</option>
+                </select>
+            </th>
+            <td>Cost</td>
+            <th>
+                <input type="number" name="attr_Mani-Mild-Cost" value="0">
+            </th>
+            <td>Duration</td>
+            <th>
+                <input type="text" name="attr_Mani-Mild-Duration">
+            </th>
+            <td>Range</td>
+            <th>
+                <input type="text" name="attr_Mani-Mild-Range">
+            </th>
+            <td>BD</td>
+            <th>
+                <input type="number" name="attr_Mani-Mild-BD" value="0">
+            </th>
+            <tr>
+                <td>AoE</td>
+                <th>
+                    <input type="text" name="attr_Mani-Mild-AoE">
+                </th>
+                <td>Status</td>
+                <th>
+                    <input type="text" name="attr_Mani-Mild-Status">
+                </th>
+                <td>Add. Targets</td>
+                <th>
+                    <input type="text" name="attr_Mani-Mild-Add-Targets">
+                </th>
+                <td>Utility</td>
+                <th>
+                    <input type="text" name="attr_Mani-Mild-Utility">
+                </th>
+                <td>Breakdown</td>
+                <th>
+                    <input type="text" name="attr_Mani-Mild-Breakdown">
+                </th>
+            </tr>
+            <tr>
+                <td>Notes</td>
+                <th colspan="8">
+                    <textarea name="attr_Mani-Mild-Notes" rows="1" class="sheet-input-inline"></textarea>
+                </th>
+                <th><button type="roll" name="attr_Mani-Mild-Roll" value="ROLL HERE">Roll</button></th>
+            </tr>
+        </tr>
+    </table>
     <h3>Moderates</h3>
-    <textarea name="attr_Manifestations-Moderates" rows="1"></textarea>
+    <table class="sheet-mani">
+            <tr>
+                <td>Name</td>
+                <th colspan="2">
+                    <input type="text" name="attr_Mani-Moderate-Name">
+                </th>
+                <td>Type</td>
+                <th>
+                    <select name="attr_Mani-Moderate-Type">
+                        <option value="Attack (Energy)">Attack (Energy)</option>
+                        <option value="Attack (Force)">Attack (Force)</option>
+                        <option value="BFC">BFC</option>
+                        <option value="Buff">Buff</option>
+                        <option value="Buff/AoE">Buff/AoE</option>
+                        <option value="Debuff">Debuff</option>
+                        <option value="Debuff/AoE">Debuff/AoE</option>
+                        <option value="Debuff/Buff">Debuff/Buff</option>
+                    </select>
+                </th>
+                <td>Description</td>
+                <th colspan="4">
+                    <textarea name="attr_Mani-Moderate-Description" rows="1" class="sheet-input-inline"></textarea>
+                </th>
+            </tr>
+            <tr>
+                <td>Circle</td>
+                <th>
+                    <select name="attr_Mani-Moderate-Circle">
+                        <option value="Slight">Slight</option>
+                        <option value="Moderate">Moderate</option>
+                        <option value="Severe">Severe</option>
+                        <option value="X-Treme!">X-Treme!</option>
+                    </select>
+                </th>
+                <td>Cost</td>
+                <th>
+                    <input type="number" name="attr_Mani-Moderate-Cost" value="0">
+                </th>
+                <td>Duration</td>
+                <th>
+                    <input type="text" name="attr_Mani-Moderate-Duration">
+                </th>
+                <td>Range</td>
+                <th>
+                    <input type="text" name="attr_Mani-Moderate-Range">
+                </th>
+                <td>BD</td>
+                <th>
+                    <input type="number" name="attr_Mani-Moderate-BD" value="0">
+                </th>
+                <tr>
+                    <td>AoE</td>
+                    <th>
+                        <input type="text" name="attr_Mani-Moderate-AoE">
+                    </th>
+                    <td>Status</td>
+                    <th>
+                        <input type="text" name="attr_Mani-Moderate-Status">
+                    </th>
+                    <td>Add. Targets</td>
+                    <th>
+                        <input type="text" name="attr_Mani-Moderate-Add-Targets">
+                    </th>
+                    <td>Utility</td>
+                    <th>
+                        <input type="text" name="attr_Mani-Moderate-Utility">
+                    </th>
+                    <td>Breakdown</td>
+                    <th>
+                        <input type="text" name="attr_Mani-Moderate-Breakdown">
+                    </th>
+                </tr>
+                <tr>
+                    <td>Notes</td>
+                    <th colspan="8">
+                        <textarea name="attr_Mani-Moderate-Notes" rows="1" class="sheet-input-inline"></textarea>
+                    </th>
+                    <th><button type="roll" name="attr_Mani-Moderate-Roll" value="ROLL HERE">Roll</button></th>
+                </tr>
+            </tr>
+        </table>
     <h3>Severes</h3>
-    <textarea name="attr_Manifestations-Severes" rows="1"></textarea>
+    <table class="sheet-mani">
+            <tr>
+                <td>Name</td>
+                <th colspan="2">
+                    <input type="text" name="attr_Mani-Severe-Name">
+                </th>
+                <td>Type</td>
+                <th>
+                    <select name="attr_Mani-Severe-Type">
+                        <option value="Attack (Energy)">Attack (Energy)</option>
+                        <option value="Attack (Force)">Attack (Force)</option>
+                        <option value="BFC">BFC</option>
+                        <option value="Buff">Buff</option>
+                        <option value="Buff/AoE">Buff/AoE</option>
+                        <option value="Debuff">Debuff</option>
+                        <option value="Debuff/AoE">Debuff/AoE</option>
+                        <option value="Debuff/Buff">Debuff/Buff</option>
+                    </select>
+                </th>
+                <td>Description</td>
+                <th colspan="4">
+                    <textarea name="attr_Mani-Severe-Description" rows="1" class="sheet-input-inline"></textarea>
+                </th>
+            </tr>
+            <tr>
+                <td>Circle</td>
+                <th>
+                    <select name="attr_Mani-Severe-Circle">
+                        <option value="Slight">Slight</option>
+                        <option value="Moderate">Moderate</option>
+                        <option value="Severe">Severe</option>
+                        <option value="X-Treme!">X-Treme!</option>
+                    </select>
+                </th>
+                <td>Cost</td>
+                <th>
+                    <input type="number" name="attr_Mani-Severe-Cost" value="0">
+                </th>
+                <td>Duration</td>
+                <th>
+                    <input type="text" name="attr_Mani-Severe-Duration">
+                </th>
+                <td>Range</td>
+                <th>
+                    <input type="text" name="attr_Mani-Severe-Range">
+                </th>
+                <td>BD</td>
+                <th>
+                    <input type="number" name="attr_Mani-Severe-BD" value="0">
+                </th>
+                <tr>
+                    <td>AoE</td>
+                    <th>
+                        <input type="text" name="attr_Mani-Severe-AoE">
+                    </th>
+                    <td>Status</td>
+                    <th>
+                        <input type="text" name="attr_Mani-Severe-Status">
+                    </th>
+                    <td>Add. Targets</td>
+                    <th>
+                        <input type="text" name="attr_Mani-Severe-Add-Targets">
+                    </th>
+                    <td>Utility</td>
+                    <th>
+                        <input type="text" name="attr_Mani-Severe-Utility">
+                    </th>
+                    <td>Breakdown</td>
+                    <th>
+                        <input type="text" name="attr_Mani-Severe-Breakdown">
+                    </th>
+                </tr>
+                <tr>
+                    <td>Notes</td>
+                    <th colspan="8">
+                        <textarea name="attr_Mani-Severe-Notes" rows="1" class="sheet-input-inline"></textarea>
+                        <th><button type="roll" name="attr_Mani-Severe-Roll" value="ROLL HERE">Roll</button></th>
+                    </th>
+                </tr>
+            </tr>
+        </table>
     <h3>Xtremes!</h3>
-    <textarea name="attr_Manifestations-Xtreme" rows="1"></textarea>
+    <table class="sheet-mani">
+            <tr>
+                <td>Name</td>
+                <th colspan="2">
+                    <input type="text" name="attr_Mani-XTreme-Name">
+                </th>
+                <td>Type</td>
+                <th>
+                    <select name="attr_Mani-XTreme-Type">
+                        <option value="Attack (Energy)">Attack (Energy)</option>
+                        <option value="Attack (Force)">Attack (Force)</option>
+                        <option value="BFC">BFC</option>
+                        <option value="Buff">Buff</option>
+                        <option value="Buff/AoE">Buff/AoE</option>
+                        <option value="Debuff">Debuff</option>
+                        <option value="Debuff/AoE">Debuff/AoE</option>
+                        <option value="Debuff/Buff">Debuff/Buff</option>
+                    </select>
+                </th>
+                <td>Description</td>
+                <th colspan="4">
+                    <textarea name="attr_Mani-XTreme-Description" rows="1" class="sheet-input-inline"></textarea>
+                </th>
+            </tr>
+            <tr>
+                <td>Circle</td>
+                <th>
+                    <select name="attr_Mani-XTreme-Circle">
+                        <option value="Slight">Slight</option>
+                        <option value="Moderate">Moderate</option>
+                        <option value="Severe">Severe</option>
+                        <option value="X-Treme!">X-Treme!</option>
+                    </select>
+                </th>
+                <td>Cost</td>
+                <th>
+                    <input type="number" name="attr_Mani-XTreme-Cost" value="0">
+                </th>
+                <td>Duration</td>
+                <th>
+                    <input type="text" name="attr_Mani-XTreme-Duration">
+                </th>
+                <td>Range</td>
+                <th>
+                    <input type="text" name="attr_Mani-XTreme-Range">
+                </th>
+                <td>BD</td>
+                <th>
+                    <input type="number" name="attr_Mani-XTreme-BD" value="0">
+                </th>
+                <tr>
+                    <td>AoE</td>
+                    <th>
+                        <input type="text" name="attr_Mani-XTreme-AoE">
+                    </th>
+                    <td>Status</td>
+                    <th>
+                        <input type="text" name="attr_Mani-XTreme-Status">
+                    </th>
+                    <td>Add. Targets</td>
+                    <th>
+                        <input type="text" name="attr_Mani-XTreme-Add-Targets">
+                    </th>
+                    <td>Utility</td>
+                    <th>
+                        <input type="text" name="attr_Mani-XTreme-Utility">
+                    </th>
+                    <td>Breakdown</td>
+                    <th>
+                        <input type="text" name="attr_Mani-XTreme-Breakdown">
+                    </th>
+                </tr>
+                <tr>
+                    <td>Notes</td>
+                    <th colspan="8">
+                        <textarea name="attr_Mani-XTreme-Notes" rows="1" class="sheet-input-inline"></textarea>
+                    </th>
+                    <th><button type="roll" name="attr_Mani-XTreme-Roll" value="ROLL HERE">Roll</button></th>
+                </tr>
+            </tr>
+        </table>
     <h2>Special Abilities</h2>
-    <textarea name="attr_Special-Abilities" rows="10"></textarea>
+    <table>
+        <tr>
+            <th style="width:20%">Name</th>
+            <th style="width:10%">cp Cost</th>
+            <th>Description</th>
+            <th style="width:10%">Send to chat</th>
+        </tr>
+        <tr>
+            <th>
+                <input type="text" name="attr_Ability-Name">
+            </th>
+            <th>
+                <input type="number" name="attr_Ability-Cost" value="0">
+            </th>
+            <th>
+                <textarea class="sheet-input-inline" name="attr_Ability-Description" rows="1"></textarea>
+            </th>
+            <th>
+                <button type="roll" name="attr_Ability-Send" value="ROLL HERE">Send</button>
+            </th>
+        </tr>
+    </table>
     <h2>Character Notes</h2>
     <textarea name="attr_Character-Notes" rows="10"></textarea>
 </body>
