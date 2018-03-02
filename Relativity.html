@@ -12,136 +12,93 @@
 
 <body>
     <h1>Relativity</h1>
+    <div class="sheet-character-info">
+        <label><span>Name</span>
+            <input type="text" name="attr_character_name" />
+        </label>
+        <label><span>Race</span>
+            <input type="text" name="attr_Race" />
+        </label>
+        <label><span>Level</span>
+            <input type="number" name="attr_Level" />
+        </label>
+        <br>
+        <label><span>Player</span>
+            <input type="text" name="attr_Player" />
+        </label>
+        <label><span>Campaign</span>
+            <input type="text" name="attr_Campaign" />
+        </label>
+        <label><span>Character Points</span>
+            <input type="number" name="attr_Character-Points" />
+        </label>
+    </div>
     <div class="sheet-row">
         <div class="sheet-column">
-            <div class="sheet-row">
-                <div class="sheet-column">
-                    <table>
-                        <tr>
-                            <td>
-                                <span>Name</span>
-                            </td>
-                            <td>
-                                <input type="text" name="attr_character_name" />
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <span>Race</span>
-                            </td>
-                            <td>
-                                <input type="text" name="attr_Race" />
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <span>Race</span>
-                            </td>
-                            <td>
-                                <input type="text" name="attr_Race" />
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <span>Level</span>
-                            </td>
-                            <td>
-                                <input type="number" name="attr_Level" />
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <span>Player</span>
-                            </td>
-                            <td>
-                                <input type="text" name="attr_Player" />
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <span>Campaign</span>
-                            </td>
-                            <td>
-                                <input type="text" name="attr_Campaign" />
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <span>Character Points</span>
-                            </td>
-                            <td>
-                                <input type="number" name="attr_Character-Points" />
-                            </td>
-                        </tr>
-                    </table>
-                </div>
-                <div class="sheet-column">
-                    <div class="sheet-header">
-                        <span>Stats</span>
-                    </div>
-                    <table>
-                        <tr>
-                            <th></th>
-                            <th>Off</th>
-                            <th>Def</th>
-                        </tr>
-                        <tr>
-                            <td>Power</td>
-                            <td>
-                                <input type="number" name="attr_Power-Off" value="0" />
-                            </td>
-                            <td>
-                                <input type="number" name="attr_Power-Def" value="0" />
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>Agility</td>
-                            <td>
-                                <input type="number" name="attr_Agility-Off" value="0" />
-                            </td>
-                            <td>
-                                <input type="number" name="attr_Agility-Def" value="0" />
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>Endurance</td>
-                            <td>
-                                <input type="number" name="attr_Endurance-Off" value="0" />
-                            </td>
-                            <td>
-                                <input type="number" name="attr_Endurance-Def" value="0" />
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>Intelligence</td>
-                            <td>
-                                <input type="number" name="attr_Intelligence-Off" value="0" />
-                            </td>
-                            <td>
-                                <input type="number" name="attr_Intelligence-Def" value="0" />
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>Wit</td>
-                            <td>
-                                <input type="number" name="attr_Wit-Off" value="0" />
-                            </td>
-                            <td>
-                                <input type="number" name="attr_Wit-Def" value="0" />
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>Presence</td>
-                            <td>
-                                <input type="number" name="attr_Presence-Off" value="0" />
-                            </td>
-                            <td>
-                                <input type="number" name="attr_Presence-Def" value="0" />
-                            </td>
-                        </tr>
-                    </table>
-                </div>
+            <div class="sheet-header">
+                <span>Stats</span>
             </div>
+            <table>
+                <tr>
+                    <th></th>
+                    <th>Offensive</th>
+                    <th>Defensive</th>
+                </tr>
+                <tr>
+                    <td>Power</td>
+                    <td>
+                        <input type="number" name="attr_Power-Off" value="0" />
+                    </td>
+                    <td>
+                        <input type="number" name="attr_Power-Def" value="0" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>Agility</td>
+                    <td>
+                        <input type="number" name="attr_Agility-Off" value="0" />
+                    </td>
+                    <td>
+                        <input type="number" name="attr_Agility-Def" value="0" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>Endurance</td>
+                    <td>
+                        <input type="number" name="attr_Endurance-Off" value="0" />
+                    </td>
+                    <td>
+                        <input type="number" name="attr_Endurance-Def" value="0" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>Intelligence</td>
+                    <td>
+                        <input type="number" name="attr_Intelligence-Off" value="0" />
+                    </td>
+                    <td>
+                        <input type="number" name="attr_Intelligence-Def" value="0" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>Wit</td>
+                    <td>
+                        <input type="number" name="attr_Wit-Off" value="0" />
+                    </td>
+                    <td>
+                        <input type="number" name="attr_Wit-Def" value="0" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>Presence</td>
+                    <td>
+                        <input type="number" name="attr_Presence-Off" value="0" />
+                    </td>
+                    <td>
+                        <input type="number" name="attr_Presence-Def" value="0" />
+                    </td>
+                </tr>
+            </table>
             <div>
                 <div class="sheet-header">
                     <span>Combat</span>
@@ -955,6 +912,109 @@
                 </table>
             </div>
         </div>
+    </div>
+    <h2>Gear</h2>
+    <div class="sheet-row">
+        <div class="sheet-column">
+            <div class="sheet-header">
+                <span>Equipment</span>
+            </div>
+            <textarea name="attr_Equipment" rows="25"></textarea>
+        </div>
+        <div class="sheet-column">
+            <table>
+                <tr>
+                    <th>Credits</th>
+                    <td>
+                        <input type="number" name="attr_Credits" value="0">
+                    </td>
+                </tr>
+            </table>
+            <table>
+                <tr>
+                    <th>Cybernetics</th>
+                    <th>Slot</th>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="text" name="attr_Cybernetics-Name">
+                    </td>
+                    <td>
+                        <input type="text" name="attr_Cybernetics-Slot">
+                    </td>
+                </tr>
+            </table>
+            <table>
+                <tr>
+                    <th>Ship Name</th>
+                    <td>
+                        <input type="text" name="attr_Ship-Name">
+                    </td>
+                </tr>
+                <tr>
+                    <th>Ship Type</th>
+                    <td>
+                        <input type="text" name="attr_Ship-Type">
+                    </td>
+                </tr>
+            </table>
+            <div class="sheet-trackers">
+                <table>
+                    <tr>
+                        <th>Hull Points</th>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="number" name="attr_Ship-Hull-Points" value="0">
+                        </td>
+                    </tr>
+                </table>
+                <table>
+                    <tr>
+                        <th>Shield DC</th>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="number" name="attr_Ship-Shield-DC" value="0">
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <table>
+                <tr>
+                    <th>Ship Mods</th>
+                </tr>
+                <tr>
+                    <td>
+                        <textarea name="attr_Ship-Mods" rows="10"></textarea>
+                    </td>
+                </tr>
+            </table>
+            <table>
+                <tr>
+                    <th>Cargo</th>
+                </tr>
+                <tr>
+                    <td>
+                        <textarea name="attr_Ship-Cargo" rows="10"></textarea>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <h2>Manifestations</h2>
+    <h3>Milds</h3>
+    <textarea name="attr_Manifestations-Milds" rows="1"></textarea>
+    <h3>Moderates</h3>
+    <textarea name="attr_Manifestations-Moderates" rows="1"></textarea>
+    <h3>Severes</h3>
+    <textarea name="attr_Manifestations-Severes" rows="1"></textarea>
+    <h3>Xtremes!</h3>
+    <textarea name="attr_Manifestations-Xtreme" rows="1"></textarea>
+    <h2>Special Abilities</h2>
+    <textarea name="attr_Special-Abilities" rows="10"></textarea>
+    <h2>Character Notes</h2>
+    <textarea name="attr_Character-Notes" rows="10"></textarea>
 </body>
 
 </html>
