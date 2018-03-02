@@ -36,3 +36,7 @@ input[type="number"] {
 input[type="text"] {
     width: 96%;
 }
+
+.sheet-Skills input[type="text"] {
+    width: 75px;
+}
