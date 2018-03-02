@@ -9,6 +9,10 @@ h1 {
     width: 95%;
 }
 
+.sheet-header span {
+    padding-left: 10px;
+}
+
 .sheet-column {
     float: left;
     width: 50%;
