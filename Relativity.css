@@ -10,6 +10,25 @@ table {
     width: 100%;
 }
 
+label {
+    display: inline;
+}
+
+button[type="roll"].sheet-rollbutton-d6 {
+    font-family: 'dicefontd6';
+    padding-top: 0px;
+    padding-bottom: 2px;
+}
+
+button[type="roll"].sheet-rollbutton-pictos {
+    font-family: 'Pictos';
+}
+
+button[type="roll"].sheet-rollbutton-d6::before,
+button[type="roll"].sheet-rollbutton-pictos::before {
+    content: "";
+}
+
 .sheet-header {
     background: black;
     color: white;
