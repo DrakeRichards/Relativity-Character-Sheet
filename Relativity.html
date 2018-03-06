@@ -12,6 +12,7 @@
 
 <body>
     <h1>Relativity</h1>
+    <!--Character Info-->
     <div class="sheet-character-info">
         <label>
             <span>Name</span>
@@ -39,9 +40,11 @@
             <input type="number" name="attr_Character-Points" />
         </label>
     </div>
+    <!--Character Stats-->
     <div class="sheet-row">
+        <!--Left Column -->
         <div class="sheet-column">
-            <div class="sheet-header">
+            <div class="sheet-header"> <!-- Attributes -->
                 <span>Stats</span>
             </div>
             <table>
@@ -105,7 +108,7 @@
                     </th>
                 </tr>
             </table>
-            <div>
+            <div> <!-- Combat Stats -->
                 <div class="sheet-header">
                     <span>Combat</span>
                 </div>
@@ -141,6 +144,7 @@
                         </tr>
                     </table>
                 </div>
+                <!-- Combat chart -->
                 <table>
                     <tr>
                         <th></th>
@@ -187,6 +191,7 @@
                     </tr>
                 </table>
             </div>
+            <!-- Weapons -->
             <div>
                 <div class="sheet-header">
                     <span>Weapons</span>
@@ -228,6 +233,7 @@
                     </tr>
                 </table>
             </div>
+            <!-- Armor -->
             <div>
                 <div class="sheet-header">
                     <span>Worn Armor</span>
@@ -262,6 +268,7 @@
                 </table>
             </div>
         </div>
+        <!-- Skills -->
         <div class="sheet-column">
             <div>
                 <div class="sheet-header">
@@ -1389,5 +1396,21 @@
     <h2>Character Notes</h2>
     <textarea name="attr_Character-Notes" rows="10"></textarea>
 </body>
+
+<rolltemplate class="sheet-rolltemplate-skill">
+    <table>
+        <tr>
+            <th colspan="2">{{title}}</th>
+        </tr>
+        <tr>
+            <td>Difficulty:</td>
+            <td>{{difficulty}}</td>
+        </tr>
+        <tr>
+            <td>Heroic Successes:</td>
+            <td>{{roll}} + {{ahs}} AHS</td>
+        </tr>
+    </table>
+</rolltemplate>
 
 </html>
