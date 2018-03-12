@@ -179,3 +179,19 @@ h1 {
   .sheet-section-Abilities th:nth-child(4) {
       width: 10%;
   }
+
+.sheet-rolltemplate-skill td {
+  background: white;
+  text-align: center;
+}
+
+.sheet-rolltemplate-skill td:first-child {
+  font-weight: bold;
+  text-align: right;
+}
+
+  .sheet-rolltemplate-skill th {
+    background: black;
+    color: white;
+    font-weight: bold;
+  }

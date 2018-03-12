@@ -7,7 +7,6 @@
     <title>Relativity Character Sheet</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="Relativity.css" />
-    <script src="main.js"></script>
 </head>
 
 <body>
@@ -304,11 +303,10 @@
                             <input type="number" name="attr_Skill-Attack-RHS" value="0">
                         </th>
                         <th>
-                            <input type="number" name="attr_Skill-Attack-AHS-display" value="@{Skill-Attack-Level}-1" disabled="disabled">
-                            <input type="number" name="attr_Skill-Attack-AHS" value="@{Skill-Attack-AHS-display" style="display:none">
+                            <input type="number" name="attr_Skill-Attack-AHS" value="@{Skill-Attack-Level}-1" disabled="disabled">
                         </th>
                         <th>
-                            <button type="roll" class="sheet-rollbutton-d6" name="attr_Skill-Attack-Roll" value="Skillroll">R</button>
+                            <button type="roll" class="sheet-rollbutton-d6" name="attr_Skill-Attack-Roll" value="&amp;{template:skill} {{title=@{character_name}'s Attack Roll}} {{difficulty=?{Difficulty|0}}} {{roll=[[[[?{Offensive or Defensive|Offensive, ?{Attribute&amp;#124;Power&amp;#44; @{Power-Off}&amp;#124;Agility&amp;#44; @{Agility-Off}&amp;#124;Endurance&amp;#44; @{Endurance-Off} &amp;#124;Intelligence&amp;#44; @{Intelligence-Off} &amp;#124;Wit&amp;#44; @{Wit-Off} &amp;#124;Presence&amp;#44; @{Presence-Off} &amp;#125; |Defensive, ?{Attribute&amp;#124;Power&amp;#44; @{Power-Def}&amp;#124;Agility&amp;#44; @{Agility-Def}&amp;#124;Endurance&amp;#44; @{Endurance-Def} &amp;#124;Intelligence&amp;#44; @{Intelligence-Def} &amp;#124;Wit&amp;#44; @{Wit-Def} &amp;#124;Presence&amp;#44; @{Presence-Def} &amp;#125;}+[[ceil(@{Skill-Attack-Level}/10000)]]+?{Bonus dice|0}]]d6>5cs>5cf<0sd]]}} {{ahs=[[@{Skill-Attack-AHS}]]}}">R</button>
                         </th>
                     </tr>
                     <tr>
@@ -323,7 +321,7 @@
                             <input type="number" name="attr_Skill-Initiative-AHS" value="@{Skill-Initiative-Level}-1" disabled="disabled">
                         </th>
                         <th>
-                            <button type="roll" class="sheet-rollbutton-d6" name="attr_Skill-Initiative-Roll" value="Skillroll">R</button>
+                            <button type="roll" class="sheet-rollbutton-d6" name="attr_Skill-Initiative-Roll" value="&amp;{template:skill} {{title=@{character_name}'s Initiative Roll}} {{difficulty=?{Difficulty|0}}} {{roll=[[[[?{Offensive or Defensive|Offensive, ?{Attribute&amp;#124;Power&amp;#44; @{Power-Off}&amp;#124;Agility&amp;#44; @{Agility-Off}&amp;#124;Intelligence&amp;#44; @{Intelligence-Off} &amp;#125; |Defensive, ?{Attribute&amp;#124;Power&amp;#44; @{Power-Def}&amp;#124;Agility&amp;#44; @{Agility-Def}&amp;#124;Intelligence&amp;#44; @{Intelligence-Def} &amp;#125;}+[[ceil(@{Skill-Initiative-Level}/10000)]]+?{Bonus dice|0}]]d6>5cs>5cf<0sd]]}} {{ahs=[[@{Skill-Initiative-AHS}]]}}">R</button>
                         </th>
                     </tr>
                     <tr>
@@ -1210,7 +1208,9 @@
         </fieldset>
     </div>
     <h2>Character Notes</h2>
-    <div style="text-align:center"><textarea name="attr_Character-Notes" rows="10" style="display:inline-block"></textarea></div>
+    <div style="text-align:center">
+        <textarea name="attr_Character-Notes" rows="10" style="display:inline-block"></textarea>
+    </div>
 </body>
 
 <rolltemplate class="sheet-rolltemplate-skill">
