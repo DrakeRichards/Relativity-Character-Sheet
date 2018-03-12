@@ -40,11 +40,13 @@
             <input type="number" name="attr_Character-Points" />
         </label>
     </div>
+    <h2>Characteristics</h2>
     <!--Character Stats-->
     <div class="sheet-row">
         <!--Left Column -->
         <div class="sheet-column">
-            <div class="sheet-header"> <!-- Attributes -->
+            <div class="sheet-header">
+                <!-- Attributes -->
                 <span>Stats</span>
             </div>
             <table>
@@ -108,7 +110,8 @@
                     </th>
                 </tr>
             </table>
-            <div> <!-- Combat Stats -->
+            <div>
+                <!-- Combat Stats -->
                 <div class="sheet-header">
                     <span>Combat</span>
                 </div>
@@ -196,98 +199,104 @@
                 <div class="sheet-header">
                     <span>Weapons</span>
                 </div>
-                <table>
-                    <tr>
-                        <th colspan="2">Weapon</th>
-                        <th>AHS</th>
-                        <th>Base Dam.</th>
-                        <th>Weapon Dam.</th>
-                        <th>Range</th>
-                        <th>Rank</th>
-                    </tr>
-                    <tr>
-                        <th colspan="2">
-                            <input type="text" name="attr_Weapon-Name">
-                        </th>
-                        <th>
-                            <input type="number" name="attr_Weapon-AHS" value="0">
-                        </th>
-                        <th>
-                            <input type="number" name="attr_Weapon-Base-Damage" value="0">
-                        </th>
-                        <th>
-                            <input type="number" name="attr_Weapon-Damage" value="0">
-                        </th>
-                        <th>
-                            <input type="number" name="attr_Weapon-Range" value="0">
-                        </th>
-                        <th>
-                            <input type="number" name="attr_Weapon-Rank" value="0">
-                        </th>
-                    </tr>
-                    <tr>
-                        <td style="width:30px">Mods:</td>
-                        <th colspan="6">
-                            <input type="text" name="attr_Weapon_Mods">
-                        </th>
-                    </tr>
-                </table>
+                <fieldset class="repeating_Weapons">
+                    <table>
+                        <tr>
+                            <th colspan="2">Weapon</th>
+                            <th>AHS</th>
+                            <th>Base Dam.</th>
+                            <th>Wpn Dam.</th>
+                            <th>Range</th>
+                            <th>Rank</th>
+                        </tr>
+                        <tr>
+                            <th colspan="2">
+                                <input type="text" name="attr_Weapon-Name">
+                            </th>
+                            <th>
+                                <input type="number" name="attr_Weapon-AHS" value="0">
+                            </th>
+                            <th>
+                                <input type="number" name="attr_Weapon-Base-Damage" value="0">
+                            </th>
+                            <th>
+                                <input type="number" name="attr_Weapon-Damage" value="0">
+                            </th>
+                            <th>
+                                <input type="number" name="attr_Weapon-Range" value="0">
+                            </th>
+                            <th>
+                                <input type="number" name="attr_Weapon-Rank" value="0">
+                            </th>
+                        </tr>
+                        <tr>
+                            <td style="width:30px">Mods:</td>
+                            <th colspan="6">
+                                <input type="text" name="attr_Weapon_Mods">
+                            </th>
+                        </tr>
+                    </table>
+                </fieldset>
             </div>
             <!-- Armor -->
             <div>
                 <div class="sheet-header">
                     <span>Worn Armor</span>
                 </div>
-                <table>
-                    <tr>
-                        <th colspan="2">Armor Type</th>
-                        <th>DC</th>
-                        <th>DR</th>
-                        <th>Rank</th>
-                    </tr>
-                    <tr>
-                        <th colspan="2">
-                            <input type="text" name="attr_Armor-Name">
-                        </th>
-                        <th>
-                            <input type="number" name="attr_Armor-DC" value="0">
-                        </th>
-                        <th>
-                            <input type="number" name="attr_Armor-DR" value="0">
-                        </th>
-                        <th>
-                            <input type="number" name="attr_Armor-Rank" value="0">
-                        </th>
-                    </tr>
-                    <tr>
-                        <td style="width:30px">Mods: </td>
-                        <th colspan="4">
-                            <input type="text" name="attr_Armor-Mods">
-                        </th>
-                    </tr>
-                </table>
+                <fieldset class="repeating_Armor">
+                    <table>
+                        <tr>
+                            <th colspan="2">Armor Type</th>
+                            <th>DC</th>
+                            <th>DR</th>
+                            <th>Rank</th>
+                        </tr>
+                        <tr>
+                            <th colspan="2">
+                                <input type="text" name="attr_Armor-Name">
+                            </th>
+                            <th>
+                                <input type="number" name="attr_Armor-DC" value="0">
+                            </th>
+                            <th>
+                                <input type="number" name="attr_Armor-DR" value="0">
+                            </th>
+                            <th>
+                                <input type="number" name="attr_Armor-Rank" value="0">
+                            </th>
+                        </tr>
+                        <tr>
+                            <td style="width:30px">Mods: </td>
+                            <th colspan="4">
+                                <input type="text" name="attr_Armor-Mods">
+                            </th>
+                        </tr>
+                    </table>
+                </fieldset>
             </div>
         </div>
         <!-- Skills -->
         <div class="sheet-column">
-            <div>
+            <div class="sheet-section-Skills">
                 <div class="sheet-header">
                     <span>Skills</span>
                 </div>
                 <table>
                     <tr>
-                        <th></th>
+                        <td></td>
                         <th>Level</th>
                         <th>RHS</th>
                         <th>AHS</th>
                         <th>Roll</th>
                     </tr>
+                </table>
+                <table>
                     <tr>
                         <th colspan="5">Attacks</th>
                     </tr>
                     <tr>
                         <td>Attack (
-                            <input type="text" style="width:70%" name="attr_Skill-Attack-Specialty">)</td>
+                            <input type="text" style="width:70%" name="attr_Skill-Attack-Specialty"> )</td>
                         <th>
                             <input type="number" name="attr_Skill-Attack-Level" value="0">
                         </th>
@@ -295,9 +304,10 @@
                             <input type="number" name="attr_Skill-Attack-RHS" value="0">
                         </th>
                         <th>
-                            <input type="number" name="attr_Skill-Attack-AHS" value="@{Skill-Attack-Level}-1" disabled="disabled">
+                            <input type="number" name="attr_Skill-Attack-AHS-display" value="@{Skill-Attack-Level}-1" disabled="disabled">
+                            <input type="number" name="attr_Skill-Attack-AHS" value="@{Skill-Attack-AHS-display" style="display:none">
                         </th>
-                                                <th>
+                        <th>
                             <button type="roll" class="sheet-rollbutton-d6" name="attr_Skill-Attack-Roll" value="Skillroll">R</button>
                         </th>
                     </tr>
@@ -312,7 +322,7 @@
                         <th>
                             <input type="number" name="attr_Skill-Initiative-AHS" value="@{Skill-Initiative-Level}-1" disabled="disabled">
                         </th>
-                                                <th>
+                        <th>
                             <button type="roll" class="sheet-rollbutton-d6" name="attr_Skill-Initiative-Roll" value="Skillroll">R</button>
                         </th>
                     </tr>
@@ -327,7 +337,7 @@
                         <th>
                             <input type="number" name="attr_Skill-Grapple-AHS" value="@{Skill-Grapple-Level}-1" disabled="disabled">
                         </th>
-                                                <th>
+                        <th>
                             <button type="roll" class="sheet-rollbutton-d6" name="attr_Skill-Grapple-Roll" value="Skillroll">R</button>
                         </th>
                     </tr>
@@ -342,27 +352,33 @@
                         <th>
                             <input type="number" name="attr_Skill-Gunner-AHS" value="@{Skill-Gunner-Level}-1" disabled="disabled">
                         </th>
-                                                <th>
+                        <th>
                             <button type="roll" class="sheet-rollbutton-d6" name="attr_Skill-Gunner-Roll" value="Skillroll">R</button>
                         </th>
                     </tr>
-                    <tr>
-                        <th>
-                            <input type="text">
-                        </th>
-                        <th>
-                            <input type="number" name="attr_Skill-Example-Repeating" value="0">
-                        </th>
-                        <th>
-                            <input type="number" name="attr_Skill-Example-Repeating" value="0">
-                        </th>
-                        <th>
-                            <input type="number" name="attr_Skill-Example-Repeating" value="0">
-                        </th>
-                                                <th>
-                            <button type="roll">R</button>
-                        </th>
-                    </tr>
+                </table>
+                <fieldset class="repeating_Skill-Repeating-Attack">
+                    <table>
+                        <tr>
+                            <td>
+                                <input type="text" name="attr_Skill-Repeating-Attack-Name">
+                            </td>
+                            <th>
+                                <input type="number" name="attr_Skill-Repeating-Attack-Level" value="0">
+                            </th>
+                            <th>
+                                <input type="number" name="attr_Skill-Repeating-Attack-RHS" value="0">
+                            </th>
+                            <th>
+                                <input type="number" name="attr_Skill-Repeating-Attack-AHS" value="0">
+                            </th>
+                            <th>
+                                <button type="roll" class="sheet-rollbutton-d6" name="attr_Skill-Repeating-Attack-Roll" value="Skillroll">R</button>
+                            </th>
+                        </tr>
+                    </table>
+                </fieldset>
+                <table>
                     <tr>
                         <th colspan="5">Physical</th>
                     </tr>
@@ -377,7 +393,7 @@
                         <th>
                             <input type="number" name="attr_Skill-Athletics-AHS" value="@{Skill-Athletics-Level}-1" disabled="disabled">
                         </th>
-                                                <th>
+                        <th>
                             <button type="roll" class="sheet-rollbutton-d6" name="attr_Skill-Athletics-Roll" value="Skillroll">R</button>
                         </th>
                     </tr>
@@ -392,7 +408,7 @@
                         <th>
                             <input type="number" name="attr_Skill-Dodge-AHS" value="@{Skill-Dodge-Level}-1" disabled="disabled">
                         </th>
-                                                <th>
+                        <th>
                             <button type="roll" class="sheet-rollbutton-d6" name="attr_Skill-Dodge-Roll" value="Skillroll">R</button>
                         </th>
                     </tr>
@@ -407,33 +423,39 @@
                         <th>
                             <input type="number" name="attr_Skill-Endure-AHS" value="@{Skill-Endure-Level}-1" disabled="disabled">
                         </th>
-                                                <th>
+                        <th>
                             <button type="roll" class="sheet-rollbutton-d6" name="attr_Skill-Endure-Roll" value="Skillroll">R</button>
                         </th>
                     </tr>
-                    <tr>
-                        <th>
-                            <input type="text">
-                        </th>
-                        <th>
-                            <input type="number" name="attr_Skill-Example-Repeating" value="0">
-                        </th>
-                        <th>
-                            <input type="number" name="attr_Skill-Example-Repeating" value="0">
-                        </th>
-                        <th>
-                            <input type="number" name="attr_Skill-Example-Repeating" value="0">
-                        </th>
-                                                <th>
-                            <button type="roll">R</button>
-                        </th>
-                    </tr>
+                </table>
+                <fieldset class="repeating_Skill-Repeating-Physical">
+                    <table>
+                        <tr>
+                            <td>
+                                <input type="text" name="attr_Skill-Repeating-Physical-Name">
+                            </td>
+                            <th>
+                                <input type="number" name="attr_Skill-Repeating-Physical-Level" value="0">
+                            </th>
+                            <th>
+                                <input type="number" name="attr_Skill-Repeating-Physical-RHS" value="0">
+                            </th>
+                            <th>
+                                <input type="number" name="attr_Skill-Repeating-Physical-AHS" value="0">
+                            </th>
+                            <th>
+                                <button type="roll" class="sheet-rollbutton-d6" name="attr_Skill-Repeating-Physical-Roll" value="Skillroll">R</button>
+                            </th>
+                        </tr>
+                    </table>
+                </fieldset>
+                <table>
                     <tr>
                         <th colspan="5">Mental</th>
                     </tr>
                     <tr>
                         <td>Craft (
-                            <input type="text" style="width:70%" name="attr_Skill-Craft-Specialty">)</td>
+                            <input type="text" style="width:70%" name="attr_Skill-Craft-Specialty"> )</td>
                         <th>
                             <input type="number" name="attr_Skill-Craft-Level" value="0">
                         </th>
@@ -443,7 +465,7 @@
                         <th>
                             <input type="number" name="attr_Skill-Craft-AHS" value="@{Skill-Craft-Level}-1" disabled="disabled">
                         </th>
-                                                <th>
+                        <th>
                             <button type="roll" class="sheet-rollbutton-d6" name="attr_Skill-Craft-Roll" value="Skillroll">R</button>
                         </th>
                     </tr>
@@ -458,7 +480,7 @@
                         <th>
                             <input type="number" name="attr_Skill-Design-AHS" value="@{Skill-Design-Level}-1" disabled="disabled">
                         </th>
-                                                <th>
+                        <th>
                             <button type="roll" class="sheet-rollbutton-d6" name="attr_Skill-Design-Roll" value="Skillroll">R</button>
                         </th>
                     </tr>
@@ -473,7 +495,7 @@
                         <th>
                             <input type="number" name="attr_Skill-Discern-AHS" value="@{Skill-Discern-Level}-1" disabled="disabled">
                         </th>
-                                                <th>
+                        <th>
                             <button type="roll" class="sheet-rollbutton-d6" name="attr_Skill-Discern-Roll" value="Skillroll">R</button>
                         </th>
                     </tr>
@@ -488,7 +510,7 @@
                         <th>
                             <input type="number" name="attr_Skill-Gaming-AHS" value="@{Skill-Gaming-Level}-1" disabled="disabled">
                         </th>
-                                                <th>
+                        <th>
                             <button type="roll" class="sheet-rollbutton-d6" name="attr_Skill-Gaming-Roll" value="Skillroll">R</button>
                         </th>
                     </tr>
@@ -504,7 +526,7 @@
                         <th>
                             <input type="number" name="attr_Skill-Hack-AHS" value="@{Skill-Hack-Level}-1" disabled="disabled">
                         </th>
-                                                <th>
+                        <th>
                             <button type="roll" class="sheet-rollbutton-d6" name="attr_Skill-Hack-Roll" value="Skillroll">R</button>
                         </th>
                     </tr>
@@ -519,13 +541,13 @@
                         <th>
                             <input type="number" name="attr_Skill-Investigate-AHS" value="@{Skill-Investigate-Level}-1" disabled="disabled">
                         </th>
-                                                <th>
+                        <th>
                             <button type="roll" class="sheet-rollbutton-d6" name="attr_Skill-Investigate-Roll" value="Skillroll">R</button>
                         </th>
                     </tr>
                     <tr>
                         <td>Know (
-                            <input type="text" style="width:70%" name="attr_Skill-Know-Specialty">)</td>
+                            <input type="text" style="width:70%" name="attr_Skill-Know-Specialty"> )</td>
                         <th>
                             <input type="number" name="attr_Skill-Know-Level" value="0">
                         </th>
@@ -535,7 +557,7 @@
                         <th>
                             <input type="number" name="attr_Skill-Know-AHS" value="@{Skill-Know-Level}-1" disabled="disabled">
                         </th>
-                                                <th>
+                        <th>
                             <button type="roll" class="sheet-rollbutton-d6" name="attr_Skill-Know-Roll" value="Skillroll">R</button>
                         </th>
                     </tr>
@@ -550,7 +572,7 @@
                         <th>
                             <input type="number" name="attr_Skill-Medical-AHS" value="@{Skill-Medical-Level}-1" disabled="disabled">
                         </th>
-                                                <th>
+                        <th>
                             <button type="roll" class="sheet-rollbutton-d6" name="attr_Skill-Medical-Roll" value="Skillroll">R</button>
                         </th>
                     </tr>
@@ -565,27 +587,33 @@
                         <th>
                             <input type="number" name="attr_Skill-Program-AHS" value="@{Skill-Program-Level}-1" disabled="disabled">
                         </th>
-                                                <th>
+                        <th>
                             <button type="roll" class="sheet-rollbutton-d6" name="attr_Skill-Program-Roll" value="Skillroll">R</button>
                         </th>
                     </tr>
-                    <tr>
-                        <th>
-                            <input type="text">
-                        </th>
-                        <th>
-                            <input type="number" name="attr_Skill-Example-Repeating" value="0">
-                        </th>
-                        <th>
-                            <input type="number" name="attr_Skill-Example-Repeating" value="0">
-                        </th>
-                        <th>
-                            <input type="number" name="attr_Skill-Example-Repeating" value="0">
-                        </th>
-                                                <th>
-                            <button type="roll">R</button>
-                        </th>
-                    </tr>
+                </table>
+                <fieldset class="repeating_Skill-Repeating-Mental">
+                    <table>
+                        <tr>
+                            <td>
+                                <input type="text" name="attr_Skill-Repeating-Mental-Name">
+                            </td>
+                            <th>
+                                <input type="number" name="attr_Skill-Repeating-Mental-Level" value="0">
+                            </th>
+                            <th>
+                                <input type="number" name="attr_Skill-Repeating-Mental-RHS" value="0">
+                            </th>
+                            <th>
+                                <input type="number" name="attr_Skill-Repeating-Mental-AHS" value="0">
+                            </th>
+                            <th>
+                                <button type="roll" class="sheet-rollbutton-d6" name="attr_Skill-Repeating-Mental-Roll" value="Skillroll">R</button>
+                            </th>
+                        </tr>
+                    </table>
+                </fieldset>
+                <table>
                     <tr>
                         <th colspan="5">Social</th>
                     </tr>
@@ -600,7 +628,7 @@
                         <th>
                             <input type="number" name="attr_Skill-Bureaucracy-AHS" value="@{Skill-Bureaucracy-Level}-1" disabled="disabled">
                         </th>
-                                                <th>
+                        <th>
                             <button type="roll" class="sheet-rollbutton-d6" name="attr_Skill-Bureaucracy-Roll" value="Skillroll">R</button>
                         </th>
                     </tr>
@@ -615,7 +643,7 @@
                         <th>
                             <input type="number" name="attr_Skill-Deceive-AHS" value="@{Skill-Deceive-Level}-1" disabled="disabled">
                         </th>
-                                                <th>
+                        <th>
                             <button type="roll" class="sheet-rollbutton-d6" name="attr_Skill-Deceive-Roll" value="Skillroll">R</button>
                         </th>
                     </tr>
@@ -630,7 +658,7 @@
                         <th>
                             <input type="number" name="attr_Skill-Demoralize-AHS" value="@{Skill-Demoralize-Level}-1" disabled="disabled">
                         </th>
-                                                <th>
+                        <th>
                             <button type="roll" class="sheet-rollbutton-d6" name="attr_Skill-Demoralize-Roll" value="Skillroll">R</button>
                         </th>
                     </tr>
@@ -646,13 +674,13 @@
                         <th>
                             <input type="number" name="attr_Skill-Influence-AHS" value="@{Skill-Influence-Level}-1" disabled="disabled">
                         </th>
-                                                <th>
+                        <th>
                             <button type="roll" class="sheet-rollbutton-d6" name="attr_Skill-Influence-Roll" value="Skillroll">R</button>
                         </th>
                     </tr>
                     <tr>
                         <td>Profession (
-                            <input type="text" style="width:70%" name="attr_Skill-Profession-Specialty">)</td>
+                            <input type="text" style="width:55%" name="attr_Skill-Profession-Specialty"> )</td>
                         <th>
                             <input type="number" name="attr_Skill-Profession-Level" value="0">
                         </th>
@@ -662,27 +690,33 @@
                         <th>
                             <input type="number" name="attr_Skill-Profession-AHS" value="@{Skill-Profession-Level}-1" disabled="disabled">
                         </th>
-                                                <th>
+                        <th>
                             <button type="roll" class="sheet-rollbutton-d6" name="attr_Skill-Profession-Roll" value="Skillroll">R</button>
                         </th>
                     </tr>
-                    <tr>
-                        <th>
-                            <input type="text">
-                        </th>
-                        <th>
-                            <input type="number" name="attr_Skill-Example-Repeating" value="0">
-                        </th>
-                        <th>
-                            <input type="number" name="attr_Skill-Example-Repeating" value="0">
-                        </th>
-                        <th>
-                            <input type="number" name="attr_Skill-Example-Repeating" value="0">
-                        </th>
-                                                <th>
-                            <button type="roll">R</button>
-                        </th>
-                    </tr>
+                </table>
+                <fieldset class="repeating_Skill-Repeating-Social">
+                    <table>
+                        <tr>
+                            <td>
+                                <input type="text" name="attr_Skill-Repeating-Social-Name">
+                            </td>
+                            <th>
+                                <input type="number" name="attr_Skill-Repeating-Social-Level" value="0">
+                            </th>
+                            <th>
+                                <input type="number" name="attr_Skill-Repeating-Social-RHS" value="0">
+                            </th>
+                            <th>
+                                <input type="number" name="attr_Skill-Repeating-Social-AHS" value="0">
+                            </th>
+                            <th>
+                                <button type="roll" class="sheet-rollbutton-d6" name="attr_Skill-Repeating-Social-Roll" value="Skillroll">R</button>
+                            </th>
+                        </tr>
+                    </table>
+                </fieldset>
+                <table>
                     <tr>
                         <th colspan="5">Tricks of the Trade</th>
                     </tr>
@@ -697,7 +731,7 @@
                         <th>
                             <input type="number" name="attr_Skill-Co_Pilot-AHS" value="@{Skill-Co_Pilot-Level}-1" disabled="disabled">
                         </th>
-                                                <th>
+                        <th>
                             <button type="roll" class="sheet-rollbutton-d6" name="attr_Skill-Co_Pilot-Roll" value="Skillroll">R</button>
                         </th>
                     </tr>
@@ -712,7 +746,7 @@
                         <th>
                             <input type="number" name="attr_Skill-Engineer-AHS" value="@{Skill-Engineer-Level}-1" disabled="disabled">
                         </th>
-                                                <th>
+                        <th>
                             <button type="roll" class="sheet-rollbutton-d6" name="attr_Skill-Engineer-Roll" value="Skillroll">R</button>
                         </th>
                     </tr>
@@ -727,7 +761,7 @@
                         <th>
                             <input type="number" name="attr_Skill-Navigation-AHS" value="@{Skill-Navigation-Level}-1" disabled="disabled">
                         </th>
-                                                <th>
+                        <th>
                             <button type="roll" class="sheet-rollbutton-d6" name="attr_Skill-Navigation-Roll" value="Skillroll">R</button>
                         </th>
                     </tr>
@@ -742,7 +776,7 @@
                         <th>
                             <input type="number" name="attr_Skill-Perception-AHS" value="@{Skill-Perception-Level}-1" disabled="disabled">
                         </th>
-                                                <th>
+                        <th>
                             <button type="roll" class="sheet-rollbutton-d6" name="attr_Skill-Perception-Roll" value="Skillroll">R</button>
                         </th>
                     </tr>
@@ -757,7 +791,7 @@
                         <th>
                             <input type="number" name="attr_Skill-Pilot-AHS" value="@{Skill-Pilot-Level}-1" disabled="disabled">
                         </th>
-                                                <th>
+                        <th>
                             <button type="roll" class="sheet-rollbutton-d6" name="attr_Skill-Pilot-Roll" value="Skillroll">R</button>
                         </th>
                     </tr>
@@ -772,7 +806,7 @@
                         <th>
                             <input type="number" name="attr_Skill-Sleight_of_Hand-AHS" value="@{Skill-Sleight_of_Hand-Level}-1" disabled="disabled">
                         </th>
-                                                <th>
+                        <th>
                             <button type="roll" class="sheet-rollbutton-d6" name="attr_Skill-Sleight_of_Hand-Roll" value="Skillroll">R</button>
                         </th>
                     </tr>
@@ -787,7 +821,7 @@
                         <th>
                             <input type="number" name="attr_Skill-Stealth-AHS" value="@{Skill-Stealth-Level}-1" disabled="disabled">
                         </th>
-                                                <th>
+                        <th>
                             <button type="roll" class="sheet-rollbutton-d6" name="attr_Skill-Stealth-Roll" value="Skillroll">R</button>
                         </th>
                     </tr>
@@ -802,28 +836,32 @@
                         <th>
                             <input type="number" name="attr_Skill-Survival-AHS" value="@{Skill-Survival-Level}-1" disabled="disabled">
                         </th>
-                                                <th>
+                        <th>
                             <button type="roll" class="sheet-rollbutton-d6" name="attr_Skill-Survival-Roll" value="Skillroll">R</button>
                         </th>
                     </tr>
-                    <tr>
-                        <th>
-                            <input type="text">
-                        </th>
-                        <th>
-                            <input type="number" name="attr_Skill-Example-Repeating" value="0">
-                        </th>
-                        <th>
-                            <input type="number" name="attr_Skill-Example-Repeating" value="0">
-                        </th>
-                        <th>
-                            <input type="number" name="attr_Skill-Example-Repeating" value="0">
-                        </th>
-                                                <th>
-                            <button type="roll">R</button>
-                        </th>
-                    </tr>
                 </table>
+                <fieldset class="repeating_Skill-Repeating-Tricks">
+                    <table>
+                        <tr>
+                            <td>
+                                <input type="text" name="attr_Skill-Repeating-Tricks-Name">
+                            </td>
+                            <th>
+                                <input type="number" name="attr_Skill-Repeating-Tricks-Level" value="0">
+                            </th>
+                            <th>
+                                <input type="number" name="attr_Skill-Repeating-Tricks-RHS" value="0">
+                            </th>
+                            <th>
+                                <input type="number" name="attr_Skill-Repeating-Tricks-AHS" value="0">
+                            </th>
+                            <th>
+                                <button type="roll" class="sheet-rollbutton-d6" name="attr_Skill-Repeating-Tricks-Roll" value="Skillroll">R</button>
+                            </th>
+                        </tr>
+                    </table>
+                </fieldset>
             </div>
         </div>
     </div>
@@ -833,463 +871,480 @@
             <div class="sheet-header">
                 <span>Equipment</span>
             </div>
-            <table>
-                <tr>
-                    <th>Name</th>
-                    <th>Description</th>
-                    <th>Weight</th>
-                </tr>
-                <tr>
-                    <th>
-                        <input type="text" name="attr_Item-Name">
-                    </th>
-                    <th>
-                        <input type="text" name="attr_Item-Description">
-                    </th>
-                    <th>
-                        <input type="number" name="attr_Item-Weight" value="0">
-                    </th>
-                </tr>
-            </table>
+            <div class="sheet-section-Equipment">
+                <table>
+                    <tr>
+                        <th>Name</th>
+                        <th>Description</th>
+                        <th>Weight</th>
+                    </tr>
+                </table>
+                <fieldset class="repeating_Equipment">
+                    <table>
+                        <tr>
+                            <th>
+                                <input type="text" name="attr_Item-Name">
+                            </th>
+                            <th>
+                                <textarea type="text" name="attr_Item-Description" rows="1" class="sheet-input-inline"></textarea>
+                            </th>
+                            <th>
+                                <input type="number" name="attr_Item-Weight" value="0">
+                            </th>
+                        </tr>
+                    </table>
+                </fieldset>
+            </div>
         </div>
         <div class="sheet-column">
             <div class="sheet-trackers">
+                <span style="font-weight:bold">Credits:</span>
+                <input type="number" name="attr_Credits" value="0">
+            </div>
+            <div class="sheet-section-Cybernetics">
                 <table>
                     <tr>
-                        <th>Credits</th>
-                        <td>
-                            <input type="number" name="attr_Credits" value="0">
-                        </td>
+                        <th>Cybernetics</th>
+                        <th>Slot</th>
                     </tr>
                 </table>
+                <fieldset class="repeating_Cybernetics">
+                    <table>
+                        <tr>
+                            <th>
+                                <input type="text" name="attr_Cybernetics-Name">
+                            </th>
+                            <th>
+                                <input type="text" name="attr_Cybernetics-Slot">
+                            </th>
+                        </tr>
+                    </table>
+                </fieldset>
             </div>
-            <table>
-                <tr>
-                    <th>Cybernetics</th>
-                    <th>Slot</th>
-                </tr>
-                <tr>
-                    <th>
-                        <input type="text" name="attr_Cybernetics-Name">
-                    </th>
-                    <th>
-                        <input type="text" name="attr_Cybernetics-Slot">
-                    </th>
-                </tr>
-            </table>
         </div>
-        <h2>Ship</h2>
-        <div class="sheet-character-info">
-            <span>Ship Name</span>
-            <input type="text" name="attr_Ship-Name">
-            <span style="padding-left: 5%">Ship Type</span>
-            <input type="text" name="attr_Ship-Type">
-        </div>
-        <br>
-        <div class="sheet-trackers">
-            <table>
-                <tr>
-                    <th>Hull Points</th>
-                </tr>
-                <tr>
-                    <th>
-                        <input type="number" name="attr_Ship-Hull-Points" value="0">
-                    </th>
-                </tr>
-            </table>
-            <table>
-                <tr>
-                    <th>Shield DC</th>
-                </tr>
-                <tr>
-                    <th>
-                        <input type="number" name="attr_Ship-Shield-DC" value="0">
-                    </th>
-                </tr>
-            </table>
-        </div>
-        <br>
+    </div>
+    <h2>Ship</h2>
+    <div class="sheet-character-info">
+        <span>Ship Name</span>
+        <input type="text" name="attr_Ship-Name">
+        <span style="padding-left: 5%">Ship Type</span>
+        <input type="text" name="attr_Ship-Type">
+    </div>
+    <br>
+    <div class="sheet-trackers">
         <table>
             <tr>
-                <th>Ship Mods</th>
+                <th>Hull Points</th>
             </tr>
             <tr>
                 <th>
-                    <textarea name="attr_Ship-Mods" rows="10"></textarea>
+                    <input type="number" name="attr_Ship-Hull-Points" value="0">
                 </th>
             </tr>
         </table>
         <table>
             <tr>
-                <th>Cargo</th>
+                <th>Shield DC</th>
             </tr>
             <tr>
                 <th>
-                    <textarea name="attr_Ship-Cargo" rows="10"></textarea>
+                    <input type="number" name="attr_Ship-Shield-DC" value="0">
                 </th>
             </tr>
         </table>
     </div>
-    <h2>Manifestations</h2>
-    <h3>Milds</h3>
-    <table class="sheet-mani">
-        <tr>
-            <td>Name</td>
-            <th colspan="2">
-                <input type="text" name="attr_Mani-Mild-Name">
-            </th>
-            <td>Type</td>
-            <th>
-                <select name="attr_Mani-Mild-Type">
-                    <option value="Attack (Energy)">Attack (Energy)</option>
-                    <option value="Attack (Force)">Attack (Force)</option>
-                    <option value="BFC">BFC</option>
-                    <option value="Buff">Buff</option>
-                    <option value="Buff/AoE">Buff/AoE</option>
-                    <option value="Debuff">Debuff</option>
-                    <option value="Debuff/AoE">Debuff/AoE</option>
-                    <option value="Debuff/Buff">Debuff/Buff</option>
-                </select>
-            </th>
-            <td>Description</td>
-            <th colspan="4">
-                <textarea name="attr_Mani-Mild-Description" rows="1" class="sheet-input-inline"></textarea>
-            </th>
-        </tr>
-        <tr>
-            <td>Circle</td>
-            <th>
-                <select name="attr_Mani-Mild-Circle">
-                    <option value="Slight">Slight</option>
-                    <option value="Moderate">Moderate</option>
-                    <option value="Severe">Severe</option>
-                    <option value="X-Treme!">X-Treme!</option>
-                </select>
-            </th>
-            <td>Cost</td>
-            <th>
-                <input type="number" name="attr_Mani-Mild-Cost" value="0">
-            </th>
-            <td>Duration</td>
-            <th>
-                <input type="text" name="attr_Mani-Mild-Duration">
-            </th>
-            <td>Range</td>
-            <th>
-                <input type="text" name="attr_Mani-Mild-Range">
-            </th>
-            <td>BD</td>
-            <th>
-                <input type="number" name="attr_Mani-Mild-BD" value="0">
-            </th>
-            <tr>
-                <td>AoE</td>
-                <th>
-                    <input type="text" name="attr_Mani-Mild-AoE">
-                </th>
-                <td>Status</td>
-                <th>
-                    <input type="text" name="attr_Mani-Mild-Status">
-                </th>
-                <td>Add. Targets</td>
-                <th>
-                    <input type="text" name="attr_Mani-Mild-Add-Targets">
-                </th>
-                <td>Utility</td>
-                <th>
-                    <input type="text" name="attr_Mani-Mild-Utility">
-                </th>
-                <td>Breakdown</td>
-                <th>
-                    <input type="text" name="attr_Mani-Mild-Breakdown">
-                </th>
-            </tr>
-            <tr>
-                <td>Notes</td>
-                <th colspan="8">
-                    <textarea name="attr_Mani-Mild-Notes" rows="1" class="sheet-input-inline"></textarea>
-                </th>
-                <th>
-                    <button type="roll" class="sheet-rollbutton-d6" name="attr_Mani-Mild-Roll" value="ROLL HERE">R</button>
-                </th>
-            </tr>
-        </tr>
-    </table>
-    <h3>Moderates</h3>
-    <table class="sheet-mani">
-        <tr>
-            <td>Name</td>
-            <th colspan="2">
-                <input type="text" name="attr_Mani-Moderate-Name">
-            </th>
-            <td>Type</td>
-            <th>
-                <select name="attr_Mani-Moderate-Type">
-                    <option value="Attack (Energy)">Attack (Energy)</option>
-                    <option value="Attack (Force)">Attack (Force)</option>
-                    <option value="BFC">BFC</option>
-                    <option value="Buff">Buff</option>
-                    <option value="Buff/AoE">Buff/AoE</option>
-                    <option value="Debuff">Debuff</option>
-                    <option value="Debuff/AoE">Debuff/AoE</option>
-                    <option value="Debuff/Buff">Debuff/Buff</option>
-                </select>
-            </th>
-            <td>Description</td>
-            <th colspan="4">
-                <textarea name="attr_Mani-Moderate-Description" rows="1" class="sheet-input-inline"></textarea>
-            </th>
-        </tr>
-        <tr>
-            <td>Circle</td>
-            <th>
-                <select name="attr_Mani-Moderate-Circle">
-                    <option value="Slight">Slight</option>
-                    <option value="Moderate">Moderate</option>
-                    <option value="Severe">Severe</option>
-                    <option value="X-Treme!">X-Treme!</option>
-                </select>
-            </th>
-            <td>Cost</td>
-            <th>
-                <input type="number" name="attr_Mani-Moderate-Cost" value="0">
-            </th>
-            <td>Duration</td>
-            <th>
-                <input type="text" name="attr_Mani-Moderate-Duration">
-            </th>
-            <td>Range</td>
-            <th>
-                <input type="text" name="attr_Mani-Moderate-Range">
-            </th>
-            <td>BD</td>
-            <th>
-                <input type="number" name="attr_Mani-Moderate-BD" value="0">
-            </th>
-            <tr>
-                <td>AoE</td>
-                <th>
-                    <input type="text" name="attr_Mani-Moderate-AoE">
-                </th>
-                <td>Status</td>
-                <th>
-                    <input type="text" name="attr_Mani-Moderate-Status">
-                </th>
-                <td>Add. Targets</td>
-                <th>
-                    <input type="text" name="attr_Mani-Moderate-Add-Targets">
-                </th>
-                <td>Utility</td>
-                <th>
-                    <input type="text" name="attr_Mani-Moderate-Utility">
-                </th>
-                <td>Breakdown</td>
-                <th>
-                    <input type="text" name="attr_Mani-Moderate-Breakdown">
-                </th>
-            </tr>
-            <tr>
-                <td>Notes</td>
-                <th colspan="8">
-                    <textarea name="attr_Mani-Moderate-Notes" rows="1" class="sheet-input-inline"></textarea>
-                </th>
-                <th>
-                    <button type="roll" class="sheet-rollbutton-d6" name="attr_Mani-Moderate-Roll" value="ROLL HERE">R</button>
-                </th>
-            </tr>
-        </tr>
-    </table>
-    <h3>Severes</h3>
-    <table class="sheet-mani">
-        <tr>
-            <td>Name</td>
-            <th colspan="2">
-                <input type="text" name="attr_Mani-Severe-Name">
-            </th>
-            <td>Type</td>
-            <th>
-                <select name="attr_Mani-Severe-Type">
-                    <option value="Attack (Energy)">Attack (Energy)</option>
-                    <option value="Attack (Force)">Attack (Force)</option>
-                    <option value="BFC">BFC</option>
-                    <option value="Buff">Buff</option>
-                    <option value="Buff/AoE">Buff/AoE</option>
-                    <option value="Debuff">Debuff</option>
-                    <option value="Debuff/AoE">Debuff/AoE</option>
-                    <option value="Debuff/Buff">Debuff/Buff</option>
-                </select>
-            </th>
-            <td>Description</td>
-            <th colspan="4">
-                <textarea name="attr_Mani-Severe-Description" rows="1" class="sheet-input-inline"></textarea>
-            </th>
-        </tr>
-        <tr>
-            <td>Circle</td>
-            <th>
-                <select name="attr_Mani-Severe-Circle">
-                    <option value="Slight">Slight</option>
-                    <option value="Moderate">Moderate</option>
-                    <option value="Severe">Severe</option>
-                    <option value="X-Treme!">X-Treme!</option>
-                </select>
-            </th>
-            <td>Cost</td>
-            <th>
-                <input type="number" name="attr_Mani-Severe-Cost" value="0">
-            </th>
-            <td>Duration</td>
-            <th>
-                <input type="text" name="attr_Mani-Severe-Duration">
-            </th>
-            <td>Range</td>
-            <th>
-                <input type="text" name="attr_Mani-Severe-Range">
-            </th>
-            <td>BD</td>
-            <th>
-                <input type="number" name="attr_Mani-Severe-BD" value="0">
-            </th>
-            <tr>
-                <td>AoE</td>
-                <th>
-                    <input type="text" name="attr_Mani-Severe-AoE">
-                </th>
-                <td>Status</td>
-                <th>
-                    <input type="text" name="attr_Mani-Severe-Status">
-                </th>
-                <td>Add. Targets</td>
-                <th>
-                    <input type="text" name="attr_Mani-Severe-Add-Targets">
-                </th>
-                <td>Utility</td>
-                <th>
-                    <input type="text" name="attr_Mani-Severe-Utility">
-                </th>
-                <td>Breakdown</td>
-                <th>
-                    <input type="text" name="attr_Mani-Severe-Breakdown">
-                </th>
-            </tr>
-            <tr>
-                <td>Notes</td>
-                <th colspan="8">
-                    <textarea name="attr_Mani-Severe-Notes" rows="1" class="sheet-input-inline"></textarea>
-                    <th>
-                        <button type="roll" class="sheet-rollbutton-d6" name="attr_Mani-Severe-Roll" value="ROLL HERE">R</button>
-                    </th>
-                </th>
-            </tr>
-        </tr>
-    </table>
-    <h3>Xtremes!</h3>
-    <table class="sheet-mani">
-        <tr>
-            <td>Name</td>
-            <th colspan="2">
-                <input type="text" name="attr_Mani-XTreme-Name">
-            </th>
-            <td>Type</td>
-            <th>
-                <select name="attr_Mani-XTreme-Type">
-                    <option value="Attack (Energy)">Attack (Energy)</option>
-                    <option value="Attack (Force)">Attack (Force)</option>
-                    <option value="BFC">BFC</option>
-                    <option value="Buff">Buff</option>
-                    <option value="Buff/AoE">Buff/AoE</option>
-                    <option value="Debuff">Debuff</option>
-                    <option value="Debuff/AoE">Debuff/AoE</option>
-                    <option value="Debuff/Buff">Debuff/Buff</option>
-                </select>
-            </th>
-            <td>Description</td>
-            <th colspan="4">
-                <textarea name="attr_Mani-XTreme-Description" rows="1" class="sheet-input-inline"></textarea>
-            </th>
-        </tr>
-        <tr>
-            <td>Circle</td>
-            <th>
-                <select name="attr_Mani-XTreme-Circle">
-                    <option value="Slight">Slight</option>
-                    <option value="Moderate">Moderate</option>
-                    <option value="Severe">Severe</option>
-                    <option value="X-Treme!">X-Treme!</option>
-                </select>
-            </th>
-            <td>Cost</td>
-            <th>
-                <input type="number" name="attr_Mani-XTreme-Cost" value="0">
-            </th>
-            <td>Duration</td>
-            <th>
-                <input type="text" name="attr_Mani-XTreme-Duration">
-            </th>
-            <td>Range</td>
-            <th>
-                <input type="text" name="attr_Mani-XTreme-Range">
-            </th>
-            <td>BD</td>
-            <th>
-                <input type="number" name="attr_Mani-XTreme-BD" value="0">
-            </th>
-            <tr>
-                <td>AoE</td>
-                <th>
-                    <input type="text" name="attr_Mani-XTreme-AoE">
-                </th>
-                <td>Status</td>
-                <th>
-                    <input type="text" name="attr_Mani-XTreme-Status">
-                </th>
-                <td>Add. Targets</td>
-                <th>
-                    <input type="text" name="attr_Mani-XTreme-Add-Targets">
-                </th>
-                <td>Utility</td>
-                <th>
-                    <input type="text" name="attr_Mani-XTreme-Utility">
-                </th>
-                <td>Breakdown</td>
-                <th>
-                    <input type="text" name="attr_Mani-XTreme-Breakdown">
-                </th>
-            </tr>
-            <tr>
-                <td>Notes</td>
-                <th colspan="8">
-                    <textarea name="attr_Mani-XTreme-Notes" rows="1" class="sheet-input-inline"></textarea>
-                </th>
-                <th>
-                    <button type="roll" class="sheet-rollbutton-d6" name="attr_Mani-XTreme-Roll" value="ROLL HERE">R</button>
-                </th>
-            </tr>
-        </tr>
-    </table>
-    <h2>Special Abilities</h2>
+    <br>
     <table>
         <tr>
-            <th style="width:20%">Name</th>
-            <th style="width:10%">Cost (cp)</th>
-            <th>Description</th>
-            <th style="width:10%">Send to chat</th>
+            <th>Ship Mods</th>
         </tr>
         <tr>
             <th>
-                <input type="text" name="attr_Ability-Name">
-            </th>
-            <th>
-                <input type="number" name="attr_Ability-Cost" value="0">
-            </th>
-            <th>
-                <textarea class="sheet-input-inline" name="attr_Ability-Description" rows="1"></textarea>
-            </th>
-            <th>
-                <button type="roll" class="sheet-rollbutton-pictos" name="attr_Ability-Send" value="ROLL HERE">q</button>
+                <textarea name="attr_Ship-Mods" rows="10"></textarea>
             </th>
         </tr>
     </table>
+    <table>
+        <tr>
+            <th>Cargo</th>
+        </tr>
+        <tr>
+            <th>
+                <textarea name="attr_Ship-Cargo" rows="10"></textarea>
+            </th>
+        </tr>
+    </table>
+    </div>
+    <h2>Manifestations</h2>
+    <h3>Milds</h3>
+    <fieldset class="repeating-Mani-Mild">
+        <table class="sheet-mani">
+            <tr>
+                <td>Name</td>
+                <th colspan="2">
+                    <input type="text" name="attr_Mani-Mild-Name">
+                </th>
+                <td>Type</td>
+                <th>
+                    <select name="attr_Mani-Mild-Type">
+                        <option value="Attack (Energy)">Attack (Energy)</option>
+                        <option value="Attack (Force)">Attack (Force)</option>
+                        <option value="BFC">BFC</option>
+                        <option value="Buff">Buff</option>
+                        <option value="Buff/AoE">Buff/AoE</option>
+                        <option value="Debuff">Debuff</option>
+                        <option value="Debuff/AoE">Debuff/AoE</option>
+                        <option value="Debuff/Buff">Debuff/Buff</option>
+                    </select>
+                </th>
+                <td>Description</td>
+                <th colspan="4">
+                    <textarea name="attr_Mani-Mild-Description" rows="1" class="sheet-input-inline"></textarea>
+                </th>
+            </tr>
+            <tr>
+                <td>Circle</td>
+                <th>
+                    <select name="attr_Mani-Mild-Circle">
+                        <option value="Slight">Slight</option>
+                        <option value="Moderate">Moderate</option>
+                        <option value="Severe">Severe</option>
+                        <option value="X-Treme!">X-Treme!</option>
+                    </select>
+                </th>
+                <td>Cost</td>
+                <th>
+                    <input type="number" name="attr_Mani-Mild-Cost" value="0">
+                </th>
+                <td>Duration</td>
+                <th>
+                    <input type="text" name="attr_Mani-Mild-Duration">
+                </th>
+                <td>Range</td>
+                <th>
+                    <input type="text" name="attr_Mani-Mild-Range">
+                </th>
+                <td>BD</td>
+                <th>
+                    <input type="number" name="attr_Mani-Mild-BD" value="0">
+                </th>
+                <tr>
+                    <td>AoE</td>
+                    <th>
+                        <input type="text" name="attr_Mani-Mild-AoE">
+                    </th>
+                    <td>Status</td>
+                    <th>
+                        <input type="text" name="attr_Mani-Mild-Status">
+                    </th>
+                    <td>Add. Targets</td>
+                    <th>
+                        <input type="text" name="attr_Mani-Mild-Add-Targets">
+                    </th>
+                    <td>Utility</td>
+                    <th>
+                        <input type="text" name="attr_Mani-Mild-Utility">
+                    </th>
+                    <td>Breakdown</td>
+                    <th>
+                        <input type="text" name="attr_Mani-Mild-Breakdown">
+                    </th>
+                </tr>
+                <tr>
+                    <td>Notes</td>
+                    <th colspan="8">
+                        <textarea name="attr_Mani-Mild-Notes" rows="1" class="sheet-input-inline"></textarea>
+                    </th>
+                    <th>
+                        <button type="roll" class="sheet-rollbutton-d6" name="attr_Mani-Mild-Roll" value="ROLL HERE">R</button>
+                    </th>
+                </tr>
+            </tr>
+        </table>
+    </fieldset>
+    <h3>Moderates</h3>
+    <fieldset class="repeating_Mani-Moderate">
+        <table class="sheet-mani">
+            <tr>
+                <td>Name</td>
+                <th colspan="2">
+                    <input type="text" name="attr_Mani-Moderate-Name">
+                </th>
+                <td>Type</td>
+                <th>
+                    <select name="attr_Mani-Moderate-Type">
+                        <option value="Attack (Energy)">Attack (Energy)</option>
+                        <option value="Attack (Force)">Attack (Force)</option>
+                        <option value="BFC">BFC</option>
+                        <option value="Buff">Buff</option>
+                        <option value="Buff/AoE">Buff/AoE</option>
+                        <option value="Debuff">Debuff</option>
+                        <option value="Debuff/AoE">Debuff/AoE</option>
+                        <option value="Debuff/Buff">Debuff/Buff</option>
+                    </select>
+                </th>
+                <td>Description</td>
+                <th colspan="4">
+                    <textarea name="attr_Mani-Moderate-Description" rows="1" class="sheet-input-inline"></textarea>
+                </th>
+            </tr>
+            <tr>
+                <td>Circle</td>
+                <th>
+                    <select name="attr_Mani-Moderate-Circle">
+                        <option value="Slight">Slight</option>
+                        <option value="Moderate">Moderate</option>
+                        <option value="Severe">Severe</option>
+                        <option value="X-Treme!">X-Treme!</option>
+                    </select>
+                </th>
+                <td>Cost</td>
+                <th>
+                    <input type="number" name="attr_Mani-Moderate-Cost" value="0">
+                </th>
+                <td>Duration</td>
+                <th>
+                    <input type="text" name="attr_Mani-Moderate-Duration">
+                </th>
+                <td>Range</td>
+                <th>
+                    <input type="text" name="attr_Mani-Moderate-Range">
+                </th>
+                <td>BD</td>
+                <th>
+                    <input type="number" name="attr_Mani-Moderate-BD" value="0">
+                </th>
+                <tr>
+                    <td>AoE</td>
+                    <th>
+                        <input type="text" name="attr_Mani-Moderate-AoE">
+                    </th>
+                    <td>Status</td>
+                    <th>
+                        <input type="text" name="attr_Mani-Moderate-Status">
+                    </th>
+                    <td>Add. Targets</td>
+                    <th>
+                        <input type="text" name="attr_Mani-Moderate-Add-Targets">
+                    </th>
+                    <td>Utility</td>
+                    <th>
+                        <input type="text" name="attr_Mani-Moderate-Utility">
+                    </th>
+                    <td>Breakdown</td>
+                    <th>
+                        <input type="text" name="attr_Mani-Moderate-Breakdown">
+                    </th>
+                </tr>
+                <tr>
+                    <td>Notes</td>
+                    <th colspan="8">
+                        <textarea name="attr_Mani-Moderate-Notes" rows="1" class="sheet-input-inline"></textarea>
+                    </th>
+                    <th>
+                        <button type="roll" class="sheet-rollbutton-d6" name="attr_Mani-Moderate-Roll" value="ROLL HERE">R</button>
+                    </th>
+                </tr>
+            </tr>
+        </table>
+    </fieldset>
+    <h3>Severes</h3>
+    <fieldset class="repeating_Mani-Severe">
+        <table class="sheet-mani">
+            <tr>
+                <td>Name</td>
+                <th colspan="2">
+                    <input type="text" name="attr_Mani-Severe-Name">
+                </th>
+                <td>Type</td>
+                <th>
+                    <select name="attr_Mani-Severe-Type">
+                        <option value="Attack (Energy)">Attack (Energy)</option>
+                        <option value="Attack (Force)">Attack (Force)</option>
+                        <option value="BFC">BFC</option>
+                        <option value="Buff">Buff</option>
+                        <option value="Buff/AoE">Buff/AoE</option>
+                        <option value="Debuff">Debuff</option>
+                        <option value="Debuff/AoE">Debuff/AoE</option>
+                        <option value="Debuff/Buff">Debuff/Buff</option>
+                    </select>
+                </th>
+                <td>Description</td>
+                <th colspan="4">
+                    <textarea name="attr_Mani-Severe-Description" rows="1" class="sheet-input-inline"></textarea>
+                </th>
+            </tr>
+            <tr>
+                <td>Circle</td>
+                <th>
+                    <select name="attr_Mani-Severe-Circle">
+                        <option value="Slight">Slight</option>
+                        <option value="Moderate">Moderate</option>
+                        <option value="Severe">Severe</option>
+                        <option value="X-Treme!">X-Treme!</option>
+                    </select>
+                </th>
+                <td>Cost</td>
+                <th>
+                    <input type="number" name="attr_Mani-Severe-Cost" value="0">
+                </th>
+                <td>Duration</td>
+                <th>
+                    <input type="text" name="attr_Mani-Severe-Duration">
+                </th>
+                <td>Range</td>
+                <th>
+                    <input type="text" name="attr_Mani-Severe-Range">
+                </th>
+                <td>BD</td>
+                <th>
+                    <input type="number" name="attr_Mani-Severe-BD" value="0">
+                </th>
+                <tr>
+                    <td>AoE</td>
+                    <th>
+                        <input type="text" name="attr_Mani-Severe-AoE">
+                    </th>
+                    <td>Status</td>
+                    <th>
+                        <input type="text" name="attr_Mani-Severe-Status">
+                    </th>
+                    <td>Add. Targets</td>
+                    <th>
+                        <input type="text" name="attr_Mani-Severe-Add-Targets">
+                    </th>
+                    <td>Utility</td>
+                    <th>
+                        <input type="text" name="attr_Mani-Severe-Utility">
+                    </th>
+                    <td>Breakdown</td>
+                    <th>
+                        <input type="text" name="attr_Mani-Severe-Breakdown">
+                    </th>
+                </tr>
+                <tr>
+                    <td>Notes</td>
+                    <th colspan="8">
+                        <textarea name="attr_Mani-Severe-Notes" rows="1" class="sheet-input-inline"></textarea>
+                        <th>
+                            <button type="roll" class="sheet-rollbutton-d6" name="attr_Mani-Severe-Roll" value="ROLL HERE">R</button>
+                        </th>
+                    </th>
+                </tr>
+            </tr>
+        </table>
+    </fieldset>
+    <h3>Xtremes!</h3>
+    <fieldset class="repeating_Mani-XTreme">
+        <table class="sheet-mani">
+            <tr>
+                <td>Name</td>
+                <th colspan="2">
+                    <input type="text" name="attr_Mani-XTreme-Name">
+                </th>
+                <td>Type</td>
+                <th>
+                    <select name="attr_Mani-XTreme-Type">
+                        <option value="Attack (Energy)">Attack (Energy)</option>
+                        <option value="Attack (Force)">Attack (Force)</option>
+                        <option value="BFC">BFC</option>
+                        <option value="Buff">Buff</option>
+                        <option value="Buff/AoE">Buff/AoE</option>
+                        <option value="Debuff">Debuff</option>
+                        <option value="Debuff/AoE">Debuff/AoE</option>
+                        <option value="Debuff/Buff">Debuff/Buff</option>
+                    </select>
+                </th>
+                <td>Description</td>
+                <th colspan="4">
+                    <textarea name="attr_Mani-XTreme-Description" rows="1" class="sheet-input-inline"></textarea>
+                </th>
+            </tr>
+            <tr>
+                <td>Circle</td>
+                <th>
+                    <select name="attr_Mani-XTreme-Circle">
+                        <option value="Slight">Slight</option>
+                        <option value="Moderate">Moderate</option>
+                        <option value="Severe">Severe</option>
+                        <option value="X-Treme!">X-Treme!</option>
+                    </select>
+                </th>
+                <td>Cost</td>
+                <th>
+                    <input type="number" name="attr_Mani-XTreme-Cost" value="0">
+                </th>
+                <td>Duration</td>
+                <th>
+                    <input type="text" name="attr_Mani-XTreme-Duration">
+                </th>
+                <td>Range</td>
+                <th>
+                    <input type="text" name="attr_Mani-XTreme-Range">
+                </th>
+                <td>BD</td>
+                <th>
+                    <input type="number" name="attr_Mani-XTreme-BD" value="0">
+                </th>
+                <tr>
+                    <td>AoE</td>
+                    <th>
+                        <input type="text" name="attr_Mani-XTreme-AoE">
+                    </th>
+                    <td>Status</td>
+                    <th>
+                        <input type="text" name="attr_Mani-XTreme-Status">
+                    </th>
+                    <td>Add. Targets</td>
+                    <th>
+                        <input type="text" name="attr_Mani-XTreme-Add-Targets">
+                    </th>
+                    <td>Utility</td>
+                    <th>
+                        <input type="text" name="attr_Mani-XTreme-Utility">
+                    </th>
+                    <td>Breakdown</td>
+                    <th>
+                        <input type="text" name="attr_Mani-XTreme-Breakdown">
+                    </th>
+                </tr>
+                <tr>
+                    <td>Notes</td>
+                    <th colspan="8">
+                        <textarea name="attr_Mani-XTreme-Notes" rows="1" class="sheet-input-inline"></textarea>
+                    </th>
+                    <th>
+                        <button type="roll" class="sheet-rollbutton-d6" name="attr_Mani-XTreme-Roll" value="ROLL HERE">R</button>
+                    </th>
+                </tr>
+            </tr>
+        </table>
+    </fieldset>
+    <h2>Special Abilities</h2>
+    <fieldset class="repeating_Abilities">
+        <table>
+            <tr>
+                <th style="width:20%">Name</th>
+                <th style="width:10%">Cost (cp)</th>
+                <th>Description</th>
+                <th style="width:10%">Send to chat</th>
+            </tr>
+            <tr>
+                <th>
+                    <input type="text" name="attr_Ability-Name">
+                </th>
+                <th>
+                    <input type="number" name="attr_Ability-Cost" value="0">
+                </th>
+                <th>
+                    <textarea class="sheet-input-inline" name="attr_Ability-Description" rows="1"></textarea>
+                </th>
+                <th>
+                    <button type="roll" class="sheet-rollbutton-pictos" name="attr_Ability-Send" value="ROLL HERE">q</button>
+                </th>
+            </tr>
+        </table>
+    </fieldset>
     <h2>Character Notes</h2>
     <textarea name="attr_Character-Notes" rows="10"></textarea>
 </body>
