@@ -1,149 +1,181 @@
 h1 {
-  text-align: center;
-}
-
-h2 {
-  text-align: center;
-}
-
-table {
-  width: 100%;
-}
-
-label {
-  display: inline;
-}
-
-button[type="roll"].sheet-rollbutton-d6 {
-  font-family: "dicefontd6";
-  padding-top: 0px;
-  padding-bottom: 2px;
-}
-
-button[type="roll"].sheet-rollbutton-pictos {
-  font-family: "Pictos";
-}
-
-button[type="roll"].sheet-rollbutton-d6::before,
-button[type="roll"].sheet-rollbutton-pictos::before {
-  content: "";
-}
-
-input[disabled="disabled"]::-webkit-inner-spin-button,
-input[disabled="disabled"]::-webkit-outer-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
-}
-
-.sheet-header {
-  background: black;
-  color: white;
-  font-weight: bold;
-  width: 95%;
-}
-
-.sheet-header span {
-  padding-left: 10px;
-}
-
-.sheet-column {
-  float: left;
-  width: 50%;
-}
-
-.sheet-row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-input[type="number"] {
-  min-width: 50px;
-  max-width: 90px;
-  width: 90%;
-  text-align: center;
-}
-
-.sheet-character-info input[type="text"] {
-  width: 200px;
-}
-
-.sheet-character-info {
-  text-align: center;
-  line-height: 30px;
-}
-
-.sheet-trackers {
-  text-align: center;
-}
-
-.sheet-trackers table {
-  display: inline;
-}
-
-input[type="text"] {
-  width: 96%;
-}
-
-textarea {
-  width: 94%;
-  resize: vertical;
-  vertical-align: middle;
-  margin: 0;
-}
-
-.sheet-input-inline {
-  width: 100%;
-  height: 17px;
-  vertical-align: middle;
-}
-
-.sheet-mani td {
-  text-align: center;
-}
-
-select {
-  margin: 0;
-  height: 23px;
-  vertical-align: middle;
-}
-
-input {
-  vertical-align: middle;
-}
-
-.sheet-section-Skills td {
-  width: 50%;
-}
-
-.sheet-section-Skills th:nth-child(2),
-.sheet-section-Skills th:nth-child(3),
-.sheet-section-Skills th:nth-child(4) {
-  width: 15%;
-}
-
-.sheet-section-Skills th:nth-child(5) {
-  width: 5%;
-}
-
-fieldset {
-  margin: 0;
-  padding: 0;
-}
-
-.sheet-section-Equipment th:nth-child(1) {
-  width: 35%;
-}
-
-.sheet-section-Equipment th:nth-child(2) {
-  width: 54%;
-}
-
-.sheet-section-Equipment textarea {
-  width: 95%;
-  height: 17px;
-}
-
-.sheet-section-Cybernetics th {
-  width: 50%;
-}
+    text-align: center;
+  }
+  
+  h2 {
+    text-align: center;
+  }
+  
+  table {
+    width: 100%;
+  }
+  
+  label {
+    display: inline;
+  }
+  
+  button[type="roll"].sheet-rollbutton-d6 {
+    font-family: "dicefontd6";
+    padding-top: 0px;
+    padding-bottom: 2px;
+  }
+  
+  button[type="roll"].sheet-rollbutton-pictos {
+    font-family: "Pictos";
+  }
+  
+  button[type="roll"].sheet-rollbutton-d6::before,
+  button[type="roll"].sheet-rollbutton-pictos::before {
+    content: "";
+  }
+  
+  input[disabled="disabled"]::-webkit-inner-spin-button,
+  input[disabled="disabled"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+  
+  .sheet-header {
+    background: black;
+    color: white;
+    font-weight: bold;
+    width: 100%;
+  }
+  
+  .sheet-header span {
+    padding-left: 10px;
+  }
+  
+  .sheet-column {
+    float: left;
+    width: 49%;
+    margin: 0 3px ;
+  }
+  
+  .sheet-row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  input[type="number"] {
+    min-width: 50px;
+    max-width: 90px;
+    width: 90%;
+    text-align: center;
+  }
+  
+  .sheet-character-info input[type="text"] {
+    width: 200px;
+  }
+  
+  .sheet-character-info {
+    text-align: center;
+    line-height: 30px;
+  }
+  
+  .sheet-trackers {
+    text-align: center;
+  }
+  
+  .sheet-trackers table {
+    display: inline;
+  }
+  
+  input[type="text"] {
+    width: 96%;
+  }
+  
+  textarea {
+    width: 94%;
+    resize: vertical;
+    vertical-align: middle;
+    margin: 0;
+  }
+  
+  .sheet-input-inline {
+    width: 100%;
+    height: 17px;
+    vertical-align: middle;
+  }
+  
+  .sheet-mani td {
+    text-align: center;
+  }
+  
+  select {
+    margin: 0;
+    height: 28px;
+    vertical-align: middle;
+    width: 20%;
+  }
+  
+  input {
+    vertical-align: middle;
+  }
+  
+  .sheet-section-Skills td {
+    width: 50%;
+  }
+  
+  .sheet-section-Skills th:nth-child(2),
+  .sheet-section-Skills th:nth-child(3),
+  .sheet-section-Skills th:nth-child(4) {
+    width: 15%;
+  }
+  
+  .sheet-section-Skills th:nth-child(5) {
+    width: 5%;
+  }
+  
+  fieldset {
+    margin: 0;
+    padding: 0;
+  }
+  
+  .sheet-section-Equipment th:nth-child(1) {
+    width: 35%;
+  }
+  
+  .sheet-section-Equipment th:nth-child(2) {
+    width: 54%;
+  }
+  
+  .sheet-section-Equipment textarea {
+    width: 95%;
+    height: 17px;
+  }
+  
+  .sheet-section-Cybernetics th {
+    width: 50%;
+  }
+  
+  .sheet-section-Manis {
+    text-align: center;
+    line-height: 30px;
+  }
+  
+  .sheet-section-Manis input[type="text"] {
+    width: 13%;
+  }
+  
+  .sheet-section-Manis input[type="number"] {
+    width: 20px;
+  }
+  
+  .sheet-section-Manis textarea {
+    width: 40%;
+  }
+  
+  .sheet-section-Manis textarea:last-of-type {
+    width: 85%;
+  }
+  
+  .sheet-section-Abilities th:nth-child(1) {
+      width: 20%;
+  }
+  
+  .sheet-section-Abilities th:nth-child(2),
+  .sheet-section-Abilities th:nth-child(4) {
+      width: 10%;
+  }
