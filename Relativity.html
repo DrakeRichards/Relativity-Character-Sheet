@@ -303,7 +303,7 @@
                             <input type="number" name="attr_Skill_Attack_RHS" value="0">
                         </th>
                         <th>
-                            <input type="number" name="attr_Skill_Attack_AHS" value="0">
+                            <input type="number" name="attr_Skill_Attack_AHS" value="floor(@{Skill_Attack_Level}*0.9)" disabled="disabled">
                         </th>
                         <th>
                             <button type="roll" class="sheet-rollbutton-d6" name="attr_Skill_Attack_Roll" value="&amp;{template:skill} {{title=@{character_name}'s Attack Roll}} {{difficulty=?{Difficulty|0}}} {{roll=[[[[?{Offensive or Defensive|Offensive, ?{Attribute&amp;#124;Power&amp;#44; @{Power_Off}&amp;#124;Agility&amp;#44; @{Agility_Off}&amp;#124;Endurance&amp;#44; @{Endurance_Off} &amp;#124;Intelligence&amp;#44; @{Intelligence_Off} &amp;#124;Wit&amp;#44; @{Wit_Off} &amp;#124;Presence&amp;#44; @{Presence_Off} &amp;#125; |Defensive, ?{Attribute&amp;#124;Power&amp;#44; @{Power_Def}&amp;#124;Agility&amp;#44; @{Agility_Def}&amp;#124;Endurance&amp;#44; @{Endurance_Def} &amp;#124;Intelligence&amp;#44; @{Intelligence_Def} &amp;#124;Wit&amp;#44; @{Wit_Def} &amp;#124;Presence&amp;#44; @{Presence_Def} &amp;#125;}+[[ceil(@{Skill_Attack_Level}/10000)]]+?{Bonus dice|0}]]d6>5cs>5cf<0sd]]}} {{ahs=[[@{Skill_Attack_AHS}]]}}">R</button>
@@ -318,7 +318,7 @@
                             <input type="number" name="attr_Skill_Initiative_RHS" value="0">
                         </th>
                         <th>
-                            <input type="number" name="attr_Skill_Initiative_AHS" value="@{Skill_Initiative_Level}-1" disabled="disabled">
+                            <input type="number" name="attr_Skill_Initiative_AHS" value="floor(@{Skill_Initiative_Level}*0.9)" disabled="disabled">
                         </th>
                         <th>
                             <button type="roll" class="sheet-rollbutton-d6" name="attr_Skill_Initiative_Roll" value="&amp;{template:skill} {{title=@{character_name}'s Initiative Roll}} {{difficulty=?{Difficulty|0}}} {{roll=[[[[?{Offensive or Defensive|Offensive, ?{Attribute&amp;#124;Power&amp;#44; @{Power_Off}&amp;#124;Agility&amp;#44; @{Agility_Off}&amp;#124;Intelligence&amp;#44; @{Intelligence_Off} &amp;#125; |Defensive, ?{Attribute&amp;#124;Power&amp;#44; @{Power_Def}&amp;#124;Agility&amp;#44; @{Agility_Def}&amp;#124;Intelligence&amp;#44; @{Intelligence_Def} &amp;#125;}+[[ceil(@{Skill_Initiative_Level}/10000)]]+?{Bonus dice|0}]]d6>5cs>5cf<0sd]]}} {{ahs=[[@{Skill_Initiative_AHS}]]}}">R</button>
@@ -333,7 +333,7 @@
                             <input type="number" name="attr_Skill_Grapple_RHS" value="0">
                         </th>
                         <th>
-                            <input type="number" name="attr_Skill_Grapple_AHS" value="@{Skill_Grapple_Level}-1" disabled="disabled">
+                            <input type="number" name="attr_Skill_Grapple_AHS" value="floor(@{Skill_Grapple_Level}*0.9)" disabled="disabled">
                         </th>
                         <th>
                             <button type="roll" class="sheet-rollbutton-d6" name="attr_Skill_Grapple_Roll" value="Skillroll">R</button>
@@ -348,7 +348,7 @@
                             <input type="number" name="attr_Skill_Gunner_RHS" value="0">
                         </th>
                         <th>
-                            <input type="number" name="attr_Skill_Gunner_AHS" value="@{Skill_Gunner_Level}-1" disabled="disabled">
+                            <input type="number" name="attr_Skill_Gunner_AHS" value="floor(@{Skill_Gunner_Level}*0.9)" disabled="disabled">
                         </th>
                         <th>
                             <button type="roll" class="sheet-rollbutton-d6" name="attr_Skill_Gunner_Roll" value="Skillroll">R</button>
@@ -368,7 +368,7 @@
                                 <input type="number" name="attr_Skill_Repeating_Attack_RHS" value="0">
                             </th>
                             <th>
-                                <input type="number" name="attr_Skill_Repeating_Attack_AHS" value="0">
+                                <input type="number" name="attr_Skill_Repeating_Attack_AHS" value="floor(@{Skill_Repeating_Attack_Level}*0.9)" disabled="disabled">
                             </th>
                             <th>
                                 <button type="roll" class="sheet-rollbutton-d6" name="attr_Skill_Repeating_Attack_Roll" value="Skillroll">R</button>
@@ -389,7 +389,7 @@
                             <input type="number" name="attr_Skill_Athletics_RHS" value="0">
                         </th>
                         <th>
-                            <input type="number" name="attr_Skill_Athletics_AHS" value="@{Skill_Athletics_Level}-1" disabled="disabled">
+                            <input type="number" name="attr_Skill_Athletics_AHS" value="floor(@{Skill_Athletics_Level}*0.9)" disabled="disabled">
                         </th>
                         <th>
                             <button type="roll" class="sheet-rollbutton-d6" name="attr_Skill_Athletics_Roll" value="Skillroll">R</button>
@@ -404,7 +404,7 @@
                             <input type="number" name="attr_Skill_Dodge_RHS" value="0">
                         </th>
                         <th>
-                            <input type="number" name="attr_Skill_Dodge_AHS" value="@{Skill_Dodge_Level}_1" disabled="disabled">
+                            <input type="number" name="attr_Skill_Dodge_AHS" value="floor(@{Skill_Dodge_Level}*0.9)" disabled="disabled">
                         </th>
                         <th>
                             <button type="roll" class="sheet-rollbutton-d6" name="attr_Skill_Dodge_Roll" value="Skillroll">R</button>
@@ -419,7 +419,7 @@
                             <input type="number" name="attr_Skill_Endure_RHS" value="0">
                         </th>
                         <th>
-                            <input type="number" name="attr_Skill_Endure_AHS" value="@{Skill_Endure_Level}_1" disabled="disabled">
+                            <input type="number" name="attr_Skill_Endure_AHS" value="floor(@{Skill_Endure_Level}*0.9)" disabled="disabled">
                         </th>
                         <th>
                             <button type="roll" class="sheet-rollbutton-d6" name="attr_Skill_Endure_Roll" value="Skillroll">R</button>
@@ -439,7 +439,7 @@
                                 <input type="number" name="attr_Skill_Repeating_Physical_RHS" value="0">
                             </th>
                             <th>
-                                <input type="number" name="attr_Skill_Repeating_Physical_AHS" value="0">
+                                <input type="number" name="attr_Skill_Repeating_Physical_AHS" value="floor(@{Skill_Repeating_Physical_Level}*0.9)" disabled="disabled">
                             </th>
                             <th>
                                 <button type="roll" class="sheet-rollbutton-d6" name="attr_Skill_Repeating_Physical_Roll" value="Skillroll">R</button>
@@ -461,7 +461,7 @@
                             <input type="number" name="attr_Skill_Craft_RHS" value="0">
                         </th>
                         <th>
-                            <input type="number" name="attr_Skill_Craft_AHS" value="@{Skill_Craft_Level}_1" disabled="disabled">
+                            <input type="number" name="attr_Skill_Craft_AHS" value="floor(@{Skill_Craft_Level}*0.9)" disabled="disabled">
                         </th>
                         <th>
                             <button type="roll" class="sheet-rollbutton-d6" name="attr_Skill_Craft_Roll" value="Skillroll">R</button>
@@ -476,7 +476,7 @@
                             <input type="number" name="attr_Skill_Design_RHS" value="0">
                         </th>
                         <th>
-                            <input type="number" name="attr_Skill_Design_AHS" value="@{Skill_Design_Level}_1" disabled="disabled">
+                            <input type="number" name="attr_Skill_Design_AHS" value="floor(@{Skill_Design_Level}*0.9)" disabled="disabled">
                         </th>
                         <th>
                             <button type="roll" class="sheet-rollbutton-d6" name="attr_Skill_Design_Roll" value="Skillroll">R</button>
@@ -491,7 +491,7 @@
                             <input type="number" name="attr_Skill_Discern_RHS" value="0">
                         </th>
                         <th>
-                            <input type="number" name="attr_Skill_Discern_AHS" value="@{Skill_Discern_Level}_1" disabled="disabled">
+                            <input type="number" name="attr_Skill_Discern_AHS" value="floor(@{Skill_Discern_Level}*0.9)" disabled="disabled">
                         </th>
                         <th>
                             <button type="roll" class="sheet-rollbutton-d6" name="attr_Skill_Discern_Roll" value="Skillroll">R</button>
@@ -506,7 +506,7 @@
                             <input type="number" name="attr_Skill_Gaming_RHS" value="0">
                         </th>
                         <th>
-                            <input type="number" name="attr_Skill_Gaming_AHS" value="@{Skill_Gaming_Level}_1" disabled="disabled">
+                            <input type="number" name="attr_Skill_Gaming_AHS" value="floor(@{Skill_Gaming_Level}*0.9)" disabled="disabled">
                         </th>
                         <th>
                             <button type="roll" class="sheet-rollbutton-d6" name="attr_Skill_Gaming_Roll" value="Skillroll">R</button>
@@ -522,7 +522,7 @@
                             <input type="number" name="attr_Skill_Hack_RHS" value="0">
                         </th>
                         <th>
-                            <input type="number" name="attr_Skill_Hack_AHS" value="@{Skill_Hack_Level}_1" disabled="disabled">
+                            <input type="number" name="attr_Skill_Hack_AHS" value="floor(@{Skill_Hack_Level}*0.9)" disabled="disabled">
                         </th>
                         <th>
                             <button type="roll" class="sheet-rollbutton-d6" name="attr_Skill_Hack_Roll" value="Skillroll">R</button>
@@ -537,7 +537,7 @@
                             <input type="number" name="attr_Skill_Investigate_RHS" value="0">
                         </th>
                         <th>
-                            <input type="number" name="attr_Skill_Investigate_AHS" value="@{Skill_Investigate_Level}_1" disabled="disabled">
+                            <input type="number" name="attr_Skill_Investigate_AHS" value="floor(@{Skill_Investigate_Level}*0.9)" disabled="disabled">
                         </th>
                         <th>
                             <button type="roll" class="sheet-rollbutton-d6" name="attr_Skill_Investigate_Roll" value="Skillroll">R</button>
@@ -553,7 +553,7 @@
                             <input type="number" name="attr_Skill_Know_RHS" value="0">
                         </th>
                         <th>
-                            <input type="number" name="attr_Skill_Know_AHS" value="@{Skill_Know_Level}_1" disabled="disabled">
+                            <input type="number" name="attr_Skill_Know_AHS" value="floor(@{Skill_Know_Level}*0.9)" disabled="disabled">
                         </th>
                         <th>
                             <button type="roll" class="sheet-rollbutton-d6" name="attr_Skill_Know_Roll" value="Skillroll">R</button>
@@ -568,7 +568,7 @@
                             <input type="number" name="attr_Skill_Medical_RHS" value="0">
                         </th>
                         <th>
-                            <input type="number" name="attr_Skill_Medical_AHS" value="@{Skill_Medical_Level}_1" disabled="disabled">
+                            <input type="number" name="attr_Skill_Medical_AHS" value="floor(@{Skill_Medical_Level}*0.9)" disabled="disabled">
                         </th>
                         <th>
                             <button type="roll" class="sheet-rollbutton-d6" name="attr_Skill_Medical_Roll" value="Skillroll">R</button>
@@ -583,7 +583,7 @@
                             <input type="number" name="attr_Skill_Program_RHS" value="0">
                         </th>
                         <th>
-                            <input type="number" name="attr_Skill_Program_AHS" value="@{Skill_Program_Level}_1" disabled="disabled">
+                            <input type="number" name="attr_Skill_Program_AHS" value="floor(@{Skill_Program_Level}*0.9)" disabled="disabled">
                         </th>
                         <th>
                             <button type="roll" class="sheet-rollbutton-d6" name="attr_Skill_Program_Roll" value="Skillroll">R</button>
@@ -603,7 +603,7 @@
                                 <input type="number" name="attr_Skill_Repeating_Mental_RHS" value="0">
                             </th>
                             <th>
-                                <input type="number" name="attr_Skill_Repeating_Mental_AHS" value="0">
+                                <input type="number" name="attr_Skill_Repeating_Mental_AHS" value="floor(@{Skill_Repeating_Mental_Level}*0.9)" disabled="disabled">
                             </th>
                             <th>
                                 <button type="roll" class="sheet-rollbutton-d6" name="attr_Skill_Repeating_Mental_Roll" value="Skillroll">R</button>
@@ -624,7 +624,7 @@
                             <input type="number" name="attr_Skill_Bureaucracy_RHS" value="0">
                         </th>
                         <th>
-                            <input type="number" name="attr_Skill_Bureaucracy_AHS" value="@{Skill_Bureaucracy_Level}_1" disabled="disabled">
+                            <input type="number" name="attr_Skill_Bureaucracy_AHS" value="floor(@{Skill_Bureaucracy_Level}*0.9)" disabled="disabled">
                         </th>
                         <th>
                             <button type="roll" class="sheet-rollbutton-d6" name="attr_Skill_Bureaucracy_Roll" value="Skillroll">R</button>
@@ -639,7 +639,7 @@
                             <input type="number" name="attr_Skill_Deceive_RHS" value="0">
                         </th>
                         <th>
-                            <input type="number" name="attr_Skill_Deceive_AHS" value="@{Skill_Deceive_Level}_1" disabled="disabled">
+                            <input type="number" name="attr_Skill_Deceive_AHS" value="floor(@{Skill_Deceive_Level}*0.9)" disabled="disabled">
                         </th>
                         <th>
                             <button type="roll" class="sheet-rollbutton-d6" name="attr_Skill_Deceive_Roll" value="Skillroll">R</button>
@@ -654,7 +654,7 @@
                             <input type="number" name="attr_Skill_Demoralize_RHS" value="0">
                         </th>
                         <th>
-                            <input type="number" name="attr_Skill_Demoralize_AHS" value="@{Skill_Demoralize_Level}_1" disabled="disabled">
+                            <input type="number" name="attr_Skill_Demoralize_AHS" value="floor(@{Skill_Demoralize_Level}*0.9)" disabled="disabled">
                         </th>
                         <th>
                             <button type="roll" class="sheet-rollbutton-d6" name="attr_Skill_Demoralize_Roll" value="Skillroll">R</button>
@@ -670,7 +670,7 @@
                             <input type="number" name="attr_Skill_Influence_RHS" value="0">
                         </th>
                         <th>
-                            <input type="number" name="attr_Skill_Influence_AHS" value="@{Skill_Influence_Level}_1" disabled="disabled">
+                            <input type="number" name="attr_Skill_Influence_AHS" value="floor(@{Skill_Influence_Level}*0.9)" disabled="disabled">
                         </th>
                         <th>
                             <button type="roll" class="sheet-rollbutton-d6" name="attr_Skill_Influence_Roll" value="Skillroll">R</button>
@@ -686,7 +686,7 @@
                             <input type="number" name="attr_Skill_Profession_RHS" value="0">
                         </th>
                         <th>
-                            <input type="number" name="attr_Skill_Profession_AHS" value="@{Skill_Profession_Level}_1" disabled="disabled">
+                            <input type="number" name="attr_Skill_Profession_AHS" value="floor(@{Skill_Profession_Level}*0.9)" disabled="disabled">
                         </th>
                         <th>
                             <button type="roll" class="sheet-rollbutton-d6" name="attr_Skill_Profession_Roll" value="Skillroll">R</button>
@@ -706,7 +706,7 @@
                                 <input type="number" name="attr_Skill_Repeating_Social_RHS" value="0">
                             </th>
                             <th>
-                                <input type="number" name="attr_Skill_Repeating_Social_AHS" value="0">
+                                <input type="number" name="attr_Skill_Repeating_Social_AHS" value="floor(@{Skill_Repeating_Social_Level}*0.9)" disabled="disabled">
                             </th>
                             <th>
                                 <button type="roll" class="sheet-rollbutton-d6" name="attr_Skill_Repeating_Social_Roll" value="Skillroll">R</button>
@@ -727,7 +727,7 @@
                             <input type="number" name="attr_Skill_Co_Pilot_RHS" value="0">
                         </th>
                         <th>
-                            <input type="number" name="attr_Skill_Co_Pilot_AHS" value="@{Skill_Co_Pilot_Level}_1" disabled="disabled">
+                            <input type="number" name="attr_Skill_Co_Pilot_AHS" value="floor(@{Skill_Co_Pilot_Level}*0.9)" disabled="disabled">
                         </th>
                         <th>
                             <button type="roll" class="sheet-rollbutton-d6" name="attr_Skill_Co_Pilot_Roll" value="Skillroll">R</button>
@@ -742,7 +742,7 @@
                             <input type="number" name="attr_Skill_Engineer_RHS" value="0">
                         </th>
                         <th>
-                            <input type="number" name="attr_Skill_Engineer_AHS" value="@{Skill_Engineer_Level}_1" disabled="disabled">
+                            <input type="number" name="attr_Skill_Engineer_AHS" value="floor(@{Skill_Engineer_Level}*0.9)" disabled="disabled">
                         </th>
                         <th>
                             <button type="roll" class="sheet-rollbutton-d6" name="attr_Skill_Engineer_Roll" value="Skillroll">R</button>
@@ -757,7 +757,7 @@
                             <input type="number" name="attr_Skill_Navigation_RHS" value="0">
                         </th>
                         <th>
-                            <input type="number" name="attr_Skill_Navigation_AHS" value="@{Skill_Navigation_Level}_1" disabled="disabled">
+                            <input type="number" name="attr_Skill_Navigation_AHS" value="floor(@{Skill_Navigation_Level}*0.9)" disabled="disabled">
                         </th>
                         <th>
                             <button type="roll" class="sheet-rollbutton-d6" name="attr_Skill_Navigation_Roll" value="Skillroll">R</button>
@@ -772,7 +772,7 @@
                             <input type="number" name="attr_Skill_Perception_RHS" value="0">
                         </th>
                         <th>
-                            <input type="number" name="attr_Skill_Perception_AHS" value="@{Skill_Perception_Level}_1" disabled="disabled">
+                            <input type="number" name="attr_Skill_Perception_AHS" value="floor(@{Skill_Perception_Level}*0.9)" disabled="disabled">
                         </th>
                         <th>
                             <button type="roll" class="sheet-rollbutton-d6" name="attr_Skill_Perception_Roll" value="Skillroll">R</button>
@@ -787,7 +787,7 @@
                             <input type="number" name="attr_Skill_Pilot_RHS" value="0">
                         </th>
                         <th>
-                            <input type="number" name="attr_Skill_Pilot_AHS" value="@{Skill_Pilot_Level}_1" disabled="disabled">
+                            <input type="number" name="attr_Skill_Pilot_AHS" value="floor(@{Skill_Pilot_Level}*0.9)" disabled="disabled">
                         </th>
                         <th>
                             <button type="roll" class="sheet-rollbutton-d6" name="attr_Skill_Pilot_Roll" value="Skillroll">R</button>
@@ -802,7 +802,7 @@
                             <input type="number" name="attr_Skill_Sleight_of_Hand_RHS" value="0">
                         </th>
                         <th>
-                            <input type="number" name="attr_Skill_Sleight_of_Hand_AHS" value="@{Skill_Sleight_of_Hand_Level}_1" disabled="disabled">
+                            <input type="number" name="attr_Skill_Sleight_of_Hand_AHS" value="floor(@{Skill_Sleight_of_Hand_Level}*0.9)" disabled="disabled">
                         </th>
                         <th>
                             <button type="roll" class="sheet-rollbutton-d6" name="attr_Skill_Sleight_of_Hand_Roll" value="Skillroll">R</button>
@@ -817,7 +817,7 @@
                             <input type="number" name="attr_Skill_Stealth_RHS" value="0">
                         </th>
                         <th>
-                            <input type="number" name="attr_Skill_Stealth_AHS" value="@{Skill_Stealth_Level}_1" disabled="disabled">
+                            <input type="number" name="attr_Skill_Stealth_AHS" value="floor(@{Skill_Stealth_Level}*0.9)" disabled="disabled">
                         </th>
                         <th>
                             <button type="roll" class="sheet-rollbutton-d6" name="attr_Skill_Stealth_Roll" value="Skillroll">R</button>
@@ -832,7 +832,7 @@
                             <input type="number" name="attr_Skill_Survival_RHS" value="0">
                         </th>
                         <th>
-                            <input type="number" name="attr_Skill_Survival_AHS" value="@{Skill_Survival_Level}_1" disabled="disabled">
+                            <input type="number" name="attr_Skill_Survival_AHS" value="floor(@{Skill_Survival_Level}*0.9)" disabled="disabled">
                         </th>
                         <th>
                             <button type="roll" class="sheet-rollbutton-d6" name="attr_Skill_Survival_Roll" value="Skillroll">R</button>
@@ -852,7 +852,7 @@
                                 <input type="number" name="attr_Skill_Repeating_Tricks_RHS" value="0">
                             </th>
                             <th>
-                                <input type="number" name="attr_Skill_Repeating_Tricks_AHS" value="0">
+                                <input type="number" name="attr_Skill_Repeating_Tricks_AHS" value="floor(@{Skill_Repeating_Tricks_Level}*0.9)" disabled="disabled">
                             </th>
                             <th>
                                 <button type="roll" class="sheet-rollbutton-d6" name="attr_Skill_Repeating_Tricks_Roll" value="Skillroll">R</button>
@@ -1214,15 +1214,6 @@
 </body>
 
 <script type="text/worker">
-    on("change:skill\-attack\-level", function() {
-        getAttrs(["Skill-Attack-Level", "Skill-Attack-AHS"], function(values) {
-            if (values.Skill\-Attack\-Level <= "0") {
-                setAttrs({Skill\-Attack\-AHS: 0});
-            } else {setAttrs({
-                Skill\-Attack\-AHS: values.Skill\-Attack\-Level - 1 
-            })};
-        });
-    });
 </script>
 
 <rolltemplate class="sheet-rolltemplate-skill">
