@@ -150,6 +150,7 @@
                 <table>
                     <tr>
                         <th></th>
+                        <th></th>
                         <th>Total</th>
                         <th>Base</th>
                         <th>SA</th>
@@ -158,40 +159,60 @@
                         <th>Temp</th>
                     </tr>
                     <tr>
-                        <td>Init</td>
-                        <td>d6+</td>
-                        <td>=</td>
+                        <td>Initiative</td>
                         <th>
-                            <input type="number" name="attr_Init_SA">
+                            <button type="roll" name="attr_Total_Initiative_Roll" class="sheet-rollbutton-d6" value="">R</button>
+                        </th>
+                        <th style="min-width:50px">
+                            <input type="text" style="width:30px;text-align:center" name="attr_Initiative_Total" value="[[@{Init_Base}+@{Init_SA}+[[@{Skill_Initiative_AHS}]]+@{Init_Other}+@{Init_Temp}]]"
+                                disabled> =</th>
+                        <th>
+                            <input type="number" name="attr_Init_Base" value="0">
                         </th>
                         <th>
-                            <input type="number" name="attr_Init_AHS">
+                            <input type="number" name="attr_Init_SA" value="0">
                         </th>
                         <th>
-                            <input type="number" name="attr_Init_Other">
+                            <input type="number" name="attr_Init_AHS" value="floor(@{Skill_Initiative_Level}*0.9)" disabled="disabled">
                         </th>
                         <th>
-                            <input type="number" name="attr_Init_Temp">
-                        </th>
-                    </tr>
-                    <tr>
-                        <td>Attack</td>
-                        <td>d6+</td>
-                        <td>=</td>
-                        <th>
-                            <input type="number" name="attr_Attack_SA">
+                            <input type="number" name="attr_Init_Other" value="0">
                         </th>
                         <th>
-                            <input type="number" name="attr_Attack_AHS">
-                        </th>
-                        <th>
-                            <input type="number" name="attr_Attack_Other">
-                        </th>
-                        <th>
-                            <input type="number" name="attr_Attack_Temp">
+                            <input type="number" name="attr_Init_Temp" value="0">
                         </th>
                     </tr>
                 </table>
+                <fieldset class="repeating_Combat">
+                    <table style="margin:0">
+                        <tr>
+                            <th>
+                                <input type="text" style="width: 48px" name="attr_Repeating_Combat_Name">
+                            </th>
+                            <th>
+                                <button type="roll" name="attr_Repeating_Combat_Roll" class="sheet-rollbutton-d6" value="">R</button>
+                            </th>
+                            <th style="min-width:50px">
+                                <input type="text" name="attr_Repeating_Combat_Total" style="width:30px;text-align:center" value="[[@{Repeating_Combat_Base}+@{Repeating_Combat_SA}+@{Repeating_Combat_AHS}+@{Repeating_Combat_Other}+@{Repeating_Combat_Temp}]]"
+                                    disabled> =</th>
+                            <th>
+                                <input type="number" name="attr_Repeating_Combat_Base" value="0">
+                            </th>
+                            <th>
+                                <input type="number" name="attr_Repeating_Combat_SA" value="0">
+                            </th>
+                            <th>
+                                <input type="number" name="attr_Repeating_Combat_AHS" value="0">
+                            </th>
+                            <th>
+                                <input type="number" name="attr_Repeating_Combat_Other" value="0">
+                            </th>
+                            <th>
+                                <input type="number" name="attr_Repeating_Combat_Temp" value="0">
+                            </th>
+                        </tr>
+                    </table>
+                </fieldset>
             </div>
             <!-- Weapons -->
             <div>
@@ -719,7 +740,7 @@
                         <th colspan="5">Tricks of the Trade</th>
                     </tr>
                     <tr>
-                        <td>Co_Pilot</td>
+                        <td>Co-Pilot</td>
                         <th>
                             <input type="number" name="attr_Skill_Co_Pilot_Level" value="0">
                         </th>
